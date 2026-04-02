@@ -6,28 +6,26 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-      
-        <meta name="author" content="TokenPak Contributors">
-      
-      
-        <link rel="canonical" href="https://docs.tokenpak.ai/troubleshooting/">
+        <meta name="description" content="Zero-token operations. Maximum context efficiency.">
       
       
-        <link rel="prev" href="../error-handling/">
+        <meta name="author" content="TokenPak Team">
       
       
-        <link rel="next" href="../DOCKER/">
+        <link rel="canonical" href="https://docs.tokenpak.dev/troubleshooting/">
+      
+      
       
       
         
       
       
-      <link rel="icon" href="../assets/favicon.ico">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>Troubleshooting - TokenPak</title>
+        <title>TokenPak Troubleshooting Guide - TokenPak</title>
       
     
     
@@ -90,11 +88,14 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="TokenPak" class="md-header__button md-logo" aria-label="TokenPak" data-md-component="logo">
       
-  <img src="../assets/logo.svg" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Troubleshooting
+              TokenPak Troubleshooting Guide
             
           </span>
         </div>
@@ -196,7 +197,7 @@
         <a href="https://github.com/tokenpak/tokenpak" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     tokenpak/tokenpak
@@ -206,14 +207,8 @@
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -242,15 +237,34 @@
   
   
   
-    
-    
-      <li class="md-tabs__item">
-        <a href="../installation/" class="md-tabs__link">
-          
+    <li class="md-tabs__item">
+      <a href="../getting-started/" class="md-tabs__link">
+        
   
+  
+    
   
   Getting Started
 
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../guides/proxy-setup/" class="md-tabs__link">
+          
+  
+  
+  Guides
+
         </a>
       </li>
     
@@ -261,17 +275,72 @@
   
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../cli-reference/" class="md-tabs__link">
+        
+  
+  
     
+  
+  CLI Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../api-reference/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
   
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../configuration/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../compression/" class="md-tabs__link">
           
   
   
-  User Guide
+  Deep Dives
 
         </a>
       </li>
@@ -287,91 +356,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../architecture/" class="md-tabs__link">
+        <a href="../blog/zero-data-architecture/" class="md-tabs__link">
           
   
   
-  Architecture
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../adapters/openai-compat/" class="md-tabs__link">
-          
-  
-  
-  Adapters
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../observability/" class="md-tabs__link">
-          
-  
-  
-  Advanced
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../recipes/01-multi-provider-fallback/" class="md-tabs__link">
-          
-  
-  
-  Recipes
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../FAQ/" class="md-tabs__link">
-          
-  
-  
-  Support
+  Blog
 
         </a>
       </li>
@@ -382,7 +371,13 @@
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -403,7 +398,8 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="TokenPak" class="md-nav__button md-logo" aria-label="TokenPak" data-md-component="logo">
       
-  <img src="../assets/logo.svg" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     TokenPak
@@ -413,7 +409,7 @@
       <a href="https://github.com/tokenpak/tokenpak" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     tokenpak/tokenpak
@@ -456,6 +452,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -470,17 +493,19 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Getting Started
+    Guides
   
 
     
@@ -491,12 +516,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Getting Started
+    Guides
   
 
           </label>
@@ -509,14 +534,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../guides/proxy-setup/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Installation
+    Proxy Setup
   
 
     
@@ -537,14 +562,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../QUICKSTART/" class="md-nav__link">
+      <a href="../guides/recipes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Quick Start
+    Recipe Development
   
 
     
@@ -565,14 +590,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../comparison/" class="md-nav__link">
+      <a href="../guides/telemetry/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Comparison
+    Telemetry & Dashboard
   
 
     
@@ -593,42 +618,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../COMPATIBILITY/" class="md-nav__link">
+      <a href="../guides/team-server/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Compatibility
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../demo/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Demo Data
+    Team Server
   
 
     
@@ -653,123 +650,10 @@
       
   
   
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    User Guide
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    User Guide
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
   
   
     <li class="md-nav__item">
-      <a href="../configuration/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Configuration
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../env-vars/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Environment Variables
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adapters/" class="md-nav__link">
+      <a href="../cli-reference/" class="md-nav__link">
         
   
   
@@ -788,662 +672,15 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../error-handling/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Error Handling
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Troubleshooting
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Troubleshooting
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Installation
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installation">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#error-no-module-named-tokenpak" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "No module named 'tokenpak'"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-modulenotfounderror-no-module-named-fastapi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "ModuleNotFoundError: No module named 'fastapi'"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-python-39-required" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Python 3.9+ required"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-permission-denied-usrlocalbintokenpak" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Permission denied: /usr/local/bin/tokenpak"
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Configuration
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#error-invalid-yaml-in-proxyyaml" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Invalid YAML in proxy.yaml"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-missing-api-key-for-provider-anthropic" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Missing API key for provider: anthropic"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-unknown-provider-custom-llm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Unknown provider: 'custom-llm'"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-invalid-model-name-gpt-4-turbo-preview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Invalid model name: 'gpt-4-turbo-preview'"
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#startup-runtime" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Startup &amp; Runtime
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Startup &amp; Runtime">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#error-port-8766-is-already-in-use" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Port 8766 is already in use"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-could-not-read-configuration-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Could not read configuration file"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-connection-refused-localhost8766" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Connection refused: localhost:8766"
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#requests-routing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Requests &amp; Routing
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Requests &amp; Routing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#error-request-timeout-no-response-from-provider" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Request timeout: no response from provider"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-invalid-api-key-for-provider-openai" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Invalid API key for provider: openai"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-model-not-supported-by-provider" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Model not supported by provider"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-rate-limit-exceeded" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Rate limit exceeded"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-fallback-provider-also-failed" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Fallback provider also failed"
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#cost-observability" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cost &amp; Observability
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Cost &amp; Observability">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#error-cost-calculation-mismatch-with-provider" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Cost calculation mismatch with provider"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-missing-cost-data-for-new-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Missing cost data for new model"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-no-logs-or-metrics-visible" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "No logs or metrics visible"
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#advanced" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Advanced
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Advanced">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#error-vault-index-not-loading" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Vault index not loading"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#error-memory-usage-growing-unbounded" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Error: "Memory usage growing unbounded"
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-help" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting Help
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../DOCKER/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Docker Deployment
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../SAVINGS/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Savings
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../SECURITY/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architecture
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Architecture
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../COMPONENT-DIAGRAM/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Component Diagram
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../API/" class="md-nav__link">
+      <a href="../api-reference/" class="md-nav__link">
         
   
   
@@ -1462,962 +699,15 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../api-reference/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    API Reference (Extended)
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../features/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Features
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../plugin-guide/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Plugin Guide
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../plugin-system-architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Plugin System Architecture
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../OSS-PRO-BOUNDARY/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OSS / PRO Boundary
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../assets/DIAGRAMS/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architecture Diagrams
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Adapters
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Adapters
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adapters/openai-compat/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenAI-Compatible
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adapters/litellm/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LiteLLM
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adapters/langchain/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LangChain
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adapters/google/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Google
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Advanced
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Advanced
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../observability/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Observability
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../production-sla/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Production SLA
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../performance/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Performance Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../PERFORMANCE/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Performance Benchmarks
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../COMPRESSION_TUNING/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Compression Tuning
-  
-
-    
-      <br>
-      <small>Optimize token savings vs latency tradeoffs for your use case</small>
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LATENCY/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Latency Analysis
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../performance/memory-analysis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Memory Analysis
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TESTING/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Testing
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Recipes
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Recipes
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/01-multi-provider-fallback/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Multi-Provider Fallback
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/02-budget-caps/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Budget Caps
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/03-per-user-rate-limiting/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Per-User Rate Limiting
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/04-model-routing-by-use-case/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Model Routing by Use Case
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/05-cost-monitoring/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Cost Monitoring
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/06-streaming-responses/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Streaming Responses
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/07-local-development-mock/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Local Development Mock
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Support
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Support
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../FAQ/" class="md-nav__link">
+      <a href="../faq/" class="md-nav__link">
         
   
   
@@ -2436,7 +726,60 @@
     </li>
   
 
-              
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Dives
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deep Dives
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -2445,14 +788,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../EXAMPLES/" class="md-nav__link">
+      <a href="../compression/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Examples
+    Compression
   
 
     
@@ -2473,14 +816,159 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-checklist/" class="md-nav__link">
+      <a href="../cache/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Release Checklist
+    Caching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telemetry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telemetry & Privacy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/zero-data-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why Zero Data Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/save-35-percent-tokens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Save 35% on LLM Tokens
   
 
     
@@ -2528,22 +1016,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
+  <a href="#table-of-contents" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Installation
+        Table of Contents
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Installation">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-cant-connect" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Can't Connect
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Can&#39;t Connect">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#error-no-module-named-tokenpak" class="md-nav__link">
+  <a href="#problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "No module named 'tokenpak'"
+        Problem
       
     </span>
   </a>
@@ -2551,10 +1050,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-modulenotfounderror-no-module-named-fastapi" class="md-nav__link">
+  <a href="#diagnose" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "ModuleNotFoundError: No module named 'fastapi'"
+        Diagnose
       
     </span>
   </a>
@@ -2562,10 +1061,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-python-39-required" class="md-nav__link">
+  <a href="#cause-a-proxy-not-running" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Python 3.9+ required"
+        Cause A: Proxy not running
       
     </span>
   </a>
@@ -2573,10 +1072,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-permission-denied-usrlocalbintokenpak" class="md-nav__link">
+  <a href="#cause-b-wrong-port" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Permission denied: /usr/local/bin/tokenpak"
+        Cause B: Wrong port
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-c-firewall-blocking-the-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause C: Firewall blocking the port
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-d-port-already-in-use-by-another-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause D: Port already in use by another process
       
     </span>
   </a>
@@ -2589,22 +1110,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
+  <a href="#2-401-unauthorized" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Configuration
+        2. 401 Unauthorized
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Configuration">
+    <nav class="md-nav" aria-label="2. 401 Unauthorized">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#error-invalid-yaml-in-proxyyaml" class="md-nav__link">
+  <a href="#problem_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Invalid YAML in proxy.yaml"
+        Problem
       
     </span>
   </a>
@@ -2612,10 +1133,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-missing-api-key-for-provider-anthropic" class="md-nav__link">
+  <a href="#diagnose_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Missing API key for provider: anthropic"
+        Diagnose
       
     </span>
   </a>
@@ -2623,10 +1144,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-unknown-provider-custom-llm" class="md-nav__link">
+  <a href="#cause-a-api-key-not-set-or-empty" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Unknown provider: 'custom-llm'"
+        Cause A: API key not set or empty
       
     </span>
   </a>
@@ -2634,10 +1155,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-invalid-model-name-gpt-4-turbo-preview" class="md-nav__link">
+  <a href="#cause-b-api-key-is-wrong-or-expired" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Invalid model name: 'gpt-4-turbo-preview'"
+        Cause B: API key is wrong or expired
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-c-key-not-passed-correctly-through-proxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause C: Key not passed correctly through proxy
       
     </span>
   </a>
@@ -2650,22 +1182,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#startup-runtime" class="md-nav__link">
+  <a href="#3-provider-errors-502" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Startup &amp; Runtime
+        3. Provider Errors (502)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Startup &amp; Runtime">
+    <nav class="md-nav" aria-label="3. Provider Errors (502)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#error-port-8766-is-already-in-use" class="md-nav__link">
+  <a href="#problem_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Port 8766 is already in use"
+        Problem
       
     </span>
   </a>
@@ -2673,10 +1205,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-could-not-read-configuration-file" class="md-nav__link">
+  <a href="#diagnose_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Could not read configuration file"
+        Diagnose
       
     </span>
   </a>
@@ -2684,10 +1216,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-connection-refused-localhost8766" class="md-nav__link">
+  <a href="#cause-a-provider-is-having-an-outage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Connection refused: localhost:8766"
+        Cause A: Provider is having an outage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-b-your-api-key-is-invalid-for-the-requested-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause B: Your API key is invalid for the requested model
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-c-network-issue-between-tokenpak-and-provider" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause C: Network issue between TokenPak and provider
       
     </span>
   </a>
@@ -2700,22 +1254,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#requests-routing" class="md-nav__link">
+  <a href="#4-rate-limit-errors-429" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Requests &amp; Routing
+        4. Rate Limit Errors (429)
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Requests &amp; Routing">
+    <nav class="md-nav" aria-label="4. Rate Limit Errors (429)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#error-request-timeout-no-response-from-provider" class="md-nav__link">
+  <a href="#problem_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Request timeout: no response from provider"
+        Problem
       
     </span>
   </a>
@@ -2723,10 +1277,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-invalid-api-key-for-provider-openai" class="md-nav__link">
+  <a href="#diagnose_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Invalid API key for provider: openai"
+        Diagnose
       
     </span>
   </a>
@@ -2734,10 +1288,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-model-not-supported-by-provider" class="md-nav__link">
+  <a href="#cause-a-exceeding-provider-rate-limits" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Model not supported by provider"
+        Cause A: Exceeding provider rate limits
       
     </span>
   </a>
@@ -2745,10 +1299,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-rate-limit-exceeded" class="md-nav__link">
+  <a href="#cause-b-tokenpaks-own-rate-limiter-is-too-strict" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Rate limit exceeded"
+        Cause B: TokenPak's own rate limiter is too strict
       
     </span>
   </a>
@@ -2756,10 +1310,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-fallback-provider-also-failed" class="md-nav__link">
+  <a href="#cause-c-multiple-clients-sharing-the-same-api-key" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Fallback provider also failed"
+        Cause C: Multiple clients sharing the same API key
       
     </span>
   </a>
@@ -2772,22 +1326,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cost-observability" class="md-nav__link">
+  <a href="#5-config-wont-load" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cost &amp; Observability
+        5. Config Won't Load
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Cost &amp; Observability">
+    <nav class="md-nav" aria-label="5. Config Won&#39;t Load">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#error-cost-calculation-mismatch-with-provider" class="md-nav__link">
+  <a href="#problem_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Cost calculation mismatch with provider"
+        Problem
       
     </span>
   </a>
@@ -2795,10 +1349,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-missing-cost-data-for-new-model" class="md-nav__link">
+  <a href="#diagnose_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Missing cost data for new model"
+        Diagnose
       
     </span>
   </a>
@@ -2806,10 +1360,32 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-no-logs-or-metrics-visible" class="md-nav__link">
+  <a href="#cause-a-json-syntax-errors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "No logs or metrics visible"
+        Cause A: JSON syntax errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-b-wrong-data-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause B: Wrong data types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-c-config-file-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause C: Config file not found
       
     </span>
   </a>
@@ -2822,22 +1398,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced" class="md-nav__link">
+  <a href="#6-docker-container-exits-immediately" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Advanced
+        6. Docker Container Exits Immediately
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Advanced">
+    <nav class="md-nav" aria-label="6. Docker Container Exits Immediately">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#error-vault-index-not-loading" class="md-nav__link">
+  <a href="#problem_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Vault index not loading"
+        Problem
       
     </span>
   </a>
@@ -2845,10 +1421,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#error-memory-usage-growing-unbounded" class="md-nav__link">
+  <a href="#diagnose_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Error: "Memory usage growing unbounded"
+        Diagnose
       
     </span>
   </a>
@@ -2856,10 +1432,536 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#getting-help" class="md-nav__link">
+  <a href="#cause-a-missing-environment-variables" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Getting Help
+        Cause A: Missing environment variables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-b-port-conflict-inside-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause B: Port conflict inside container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-c-config-path-doesnt-exist-in-container" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause C: Config path doesn't exist in container
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-d-python-version-mismatch-in-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause D: Python version mismatch in image
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-pip-install-fails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. pip install Fails
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. pip install Fails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnose_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-a-python-version-too-old" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause A: Python version too old
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-b-dependency-conflict" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause B: Dependency conflict
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-c-missing-system-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause C: Missing system dependencies
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-high-latency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. High Latency
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. High Latency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnose_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-a-provider-latency-not-tokenpak" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause A: Provider latency (not TokenPak)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-b-compression-overhead-on-large-prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause B: Compression overhead on large prompts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-c-slow-disk-io-affects-cache-and-telemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause C: Slow disk I/O (affects cache and telemetry)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-cost-data-missing-or-zero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Cost Data Missing or Zero
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="9. Cost Data Missing or Zero">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnose_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-a-telemetry-database-doesnt-exist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause A: Telemetry database doesn't exist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-b-events-recorded-but-no-cost-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause B: Events recorded but no cost data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-c-provider-doesnt-report-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause C: Provider doesn't report usage
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-logs-not-showing-wrong-level" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Logs Not Showing / Wrong Level
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. Logs Not Showing / Wrong Level">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnose_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-a-log-level-too-high-hiding-useful-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause A: Log level too high (hiding useful messages)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-b-logs-going-to-wrong-destination" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause B: Logs going to wrong destination
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-c-log-file-permissions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause C: Log file permissions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-cache-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Cache Not Working
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. Cache Not Working">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnose_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-a-cache-is-disabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause A: Cache is disabled
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-b-prompts-have-varying-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause B: Prompts have varying metadata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-c-cache-evicted-too-quickly-too-small" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause C: Cache evicted too quickly (too small)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-compression-not-reducing-tokens" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Compression Not Reducing Tokens
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="12. Compression Not Reducing Tokens">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problem_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problem
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#diagnose_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diagnose
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-a-input-below-compression-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause A: Input below compression threshold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-b-compression-mode-is-too-conservative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause B: Compression mode is too conservative
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cause-c-content-isnt-compressible" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cause C: Content isn't compressible
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-more-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting More Help
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting More Help">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-search-existing-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Search existing issues
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-file-a-bug-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. File a bug report
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-error-codes-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Error codes reference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-community" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Community
       
     </span>
   </a>
@@ -2882,6 +1984,14 @@
           
             <div class="md-content" data-md-component="content">
               
+                
+
+
+
+  
+
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2892,381 +2002,633 @@
 
 
 <h1 id="tokenpak-troubleshooting-guide">TokenPak Troubleshooting Guide<a class="headerlink" href="#tokenpak-troubleshooting-guide" title="Permanent link">&para;</a></h1>
-<p>A quick reference for the most common issues and their fixes. If something isn't here, check <a href="https://github.com/kaywhy331/tokenpak/issues">GitHub Issues</a> or open a new one.</p>
+<p>Find your problem fast. Every section follows <strong>Problem → Cause → Fix</strong> with copy-paste commands.</p>
 <hr />
-<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<h3 id="error-no-module-named-tokenpak">Error: "No module named 'tokenpak'"<a class="headerlink" href="#error-no-module-named-tokenpak" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> <code>python -c "import tokenpak"</code> fails or your code can't find TokenPak.</p>
-<p><strong>Likely cause:</strong> TokenPak isn't installed, or you're using a different Python version.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Check which Python you&#39;re using</span>
-which<span class="w"> </span>python3
-
-<span class="c1"># Install for that version</span>
-python3<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>tokenpak
-
-<span class="c1"># Verify</span>
-python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tokenpak; print(tokenpak.__version__)&quot;</span>
-</code></pre></div></p>
-<h3 id="error-modulenotfounderror-no-module-named-fastapi">Error: "ModuleNotFoundError: No module named 'fastapi'"<a class="headerlink" href="#error-modulenotfounderror-no-module-named-fastapi" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> TokenPak fails to start with a dependency error.</p>
-<p><strong>Likely cause:</strong> Optional dependencies weren't installed. You may have skipped the full installation.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Reinstall with all deps</span>
-pip<span class="w"> </span>install<span class="w"> </span>tokenpak<span class="o">[</span>all<span class="o">]</span>
-
-<span class="c1"># Or install specific extras</span>
-pip<span class="w"> </span>install<span class="w"> </span>tokenpak<span class="o">[</span>docs<span class="o">]</span><span class="w">  </span><span class="c1"># for documentation</span>
-pip<span class="w"> </span>install<span class="w"> </span>tokenpak<span class="o">[</span>dev<span class="o">]</span><span class="w">   </span><span class="c1"># for development</span>
-</code></pre></div></p>
-<h3 id="error-python-39-required">Error: "Python 3.9+ required"<a class="headerlink" href="#error-python-39-required" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> Installation fails with "This project requires Python 3.9 or later."</p>
-<p><strong>Likely cause:</strong> You're running Python 3.8 or older.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Check your Python version</span>
-python3<span class="w"> </span>--version
-
-<span class="c1"># Install Python 3.9 or later (depends on your OS)</span>
-<span class="c1"># macOS:</span>
-brew<span class="w"> </span>install<span class="w"> </span>python@3.11
-
-<span class="c1"># Ubuntu/Debian:</span>
-sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3.11
-
-<span class="c1"># Windows: Download from python.org or use Windows Store</span>
-
-<span class="c1"># Then reinstall</span>
-python3.11<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>tokenpak
-</code></pre></div></p>
-<h3 id="error-permission-denied-usrlocalbintokenpak">Error: "Permission denied: /usr/local/bin/tokenpak"<a class="headerlink" href="#error-permission-denied-usrlocalbintokenpak" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> After <code>pip install</code>, <code>tokenpak</code> command fails with permission error.</p>
-<p><strong>Likely cause:</strong> pip installed to a system directory without write permissions.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Install to user directory</span>
-pip<span class="w"> </span>install<span class="w"> </span>--user<span class="w"> </span>tokenpak
-
-<span class="c1"># Or use a virtual environment (recommended)</span>
-python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
-<span class="nb">source</span><span class="w"> </span>venv/bin/activate<span class="w">  </span><span class="c1"># on Windows: venv\Scripts\activate</span>
-pip<span class="w"> </span>install<span class="w"> </span>tokenpak
-</code></pre></div></p>
-<hr />
-<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
-<h3 id="error-invalid-yaml-in-proxyyaml">Error: "Invalid YAML in proxy.yaml"<a class="headerlink" href="#error-invalid-yaml-in-proxyyaml" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> TokenPak fails to start with "YAML parsing error" or "Invalid configuration."</p>
-<p><strong>Likely cause:</strong> Syntax error in <code>proxy.yaml</code> (bad indentation, missing quotes, etc.).</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Validate the YAML syntax</span>
-python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import yaml; yaml.safe_load(open(&#39;proxy.yaml&#39;))&quot;</span>
-
-<span class="c1"># If that works, check TokenPak parsing</span>
-tokenpak<span class="w"> </span>validate-config<span class="w"> </span>proxy.yaml
-
-<span class="c1"># Common mistakes:</span>
-<span class="c1"># - Tabs instead of spaces (use spaces only)</span>
-<span class="c1"># - Missing colons after keys</span>
-<span class="c1"># - Mismatched quotes</span>
-
-<span class="c1"># Example (correct):</span>
-routing:
-<span class="w">  </span>primary:<span class="w"> </span><span class="s2">&quot;anthropic&quot;</span>
-<span class="w">  </span>fallback:<span class="w"> </span><span class="s2">&quot;openai&quot;</span>
-</code></pre></div></p>
-<h3 id="error-missing-api-key-for-provider-anthropic">Error: "Missing API key for provider: anthropic"<a class="headerlink" href="#error-missing-api-key-for-provider-anthropic" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> Requests fail with "No API key found" or "Invalid credentials."</p>
-<p><strong>Likely cause:</strong> Environment variable isn't set, or TokenPak isn't reading it.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Set the environment variable</span>
-<span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span><span class="s2">&quot;sk-ant-...&quot;</span>
-
-<span class="c1"># Or add to proxy.yaml</span>
-providers:
-<span class="w">  </span>anthropic:
-<span class="w">    </span>api_key:<span class="w"> </span><span class="s2">&quot;sk-ant-...&quot;</span><span class="w">  </span><span class="c1"># Not recommended (secrets in code)</span>
-
-<span class="c1"># Better: use .env file</span>
-<span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;ANTHROPIC_API_KEY=sk-ant-...&quot;</span><span class="w"> </span>&gt;<span class="w"> </span>.env
-tokenpak<span class="w"> </span>serve<span class="w"> </span>--env-file<span class="w"> </span>.env
-
-<span class="c1"># Check what TokenPak sees</span>
-tokenpak<span class="w"> </span>doctor
-</code></pre></div></p>
-<h3 id="error-unknown-provider-custom-llm">Error: "Unknown provider: 'custom-llm'"<a class="headerlink" href="#error-unknown-provider-custom-llm" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> Config references a provider that isn't registered.</p>
-<p><strong>Likely cause:</strong> Typo in provider name, or the provider module isn't loaded.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Check your provider name matches exactly</span>
-<span class="nt">routing</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">primary</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;anthropic&quot;</span><span class="w">  </span><span class="c1"># Not &quot;anthropic_api&quot; or &quot;ANTHROPIC&quot;</span>
-
-<span class="c1"># If using a custom provider, ensure it&#39;s imported:</span>
-<span class="nt">custom_providers</span><span class="p">:</span>
-<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">module</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;mylib.custom_llm&quot;</span><span class="w">  </span><span class="c1"># Must be importable</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;custom-llm&quot;</span>
-</code></pre></div></p>
-<h3 id="error-invalid-model-name-gpt-4-turbo-preview">Error: "Invalid model name: 'gpt-4-turbo-preview'"<a class="headerlink" href="#error-invalid-model-name-gpt-4-turbo-preview" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> Requests fail with "Model not found" or "Invalid model."</p>
-<p><strong>Likely cause:</strong> The model isn't available for that provider, or TokenPak doesn't recognize it.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Check what models the provider supports</span>
-tokenpak<span class="w"> </span>list-models<span class="w"> </span>anthropic
-tokenpak<span class="w"> </span>list-models<span class="w"> </span>openai
-
-<span class="c1"># Use a valid model name:</span>
-<span class="c1"># Anthropic: claude-3-opus, claude-3-sonnet, claude-3-haiku</span>
-<span class="c1"># OpenAI: gpt-4, gpt-3.5-turbo, gpt-4-turbo</span>
-
-<span class="c1"># If using a custom model, add it to proxy.yaml:</span>
-providers:
-<span class="w">  </span>openai:
-<span class="w">    </span>model_aliases:
-<span class="w">      </span><span class="s2">&quot;gpt-4-latest&quot;</span>:<span class="w"> </span><span class="s2">&quot;gpt-4-turbo-preview&quot;</span>
-</code></pre></div></p>
-<hr />
-<h2 id="startup-runtime">Startup &amp; Runtime<a class="headerlink" href="#startup-runtime" title="Permanent link">&para;</a></h2>
-<h3 id="error-port-8766-is-already-in-use">Error: "Port 8766 is already in use"<a class="headerlink" href="#error-port-8766-is-already-in-use" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> TokenPak fails to start with "Address already in use" or "Port is occupied."</p>
-<p><strong>Likely cause:</strong> Another service (or another TokenPak instance) is using port 8766.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Find what&#39;s using the port</span>
-lsof<span class="w"> </span>-i<span class="w"> </span>:8766<span class="w">  </span><span class="c1"># macOS/Linux</span>
-netstat<span class="w"> </span>-ano<span class="w"> </span><span class="p">|</span><span class="w"> </span>findstr<span class="w"> </span>:8766<span class="w">  </span><span class="c1"># Windows</span>
-
-<span class="c1"># Either:</span>
-<span class="c1"># 1. Stop the other service</span>
-<span class="c1"># 2. Kill the process: kill -9 &lt;PID&gt;</span>
-<span class="c1"># 3. Or use a different port:</span>
-tokenpak<span class="w"> </span>serve<span class="w"> </span>--port<span class="w"> </span><span class="m">9000</span>
-
-<span class="c1"># Or in proxy.yaml:</span>
-server:
-<span class="w">  </span>port:<span class="w"> </span><span class="m">9000</span>
-</code></pre></div></p>
-<h3 id="error-could-not-read-configuration-file">Error: "Could not read configuration file"<a class="headerlink" href="#error-could-not-read-configuration-file" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> <code>FileNotFoundError</code> or "proxy.yaml not found."</p>
-<p><strong>Likely cause:</strong> TokenPak can't find <code>proxy.yaml</code> (wrong working directory).</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># TokenPak looks for proxy.yaml in the current directory</span>
-<span class="c1"># Make sure you&#39;re in the right folder</span>
-<span class="nb">cd</span><span class="w"> </span>~/tokenpak
-tokenpak<span class="w"> </span>serve
-
-<span class="c1"># Or specify the path explicitly</span>
-tokenpak<span class="w"> </span>serve<span class="w"> </span>--config<span class="w"> </span>/path/to/proxy.yaml
-</code></pre></div></p>
-<h3 id="error-connection-refused-localhost8766">Error: "Connection refused: localhost:8766"<a class="headerlink" href="#error-connection-refused-localhost8766" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> Your app can't connect to TokenPak, even though it's running.</p>
-<p><strong>Likely cause:</strong> TokenPak is listening on <code>127.0.0.1</code> (localhost), but you're connecting from a different machine or Docker container.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># In proxy.yaml, bind to all interfaces:</span>
-<span class="nt">server</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">host</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0.0.0.0&quot;</span><span class="w">  </span><span class="c1"># Listen on all interfaces</span>
-<span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">8766</span>
-
-<span class="c1"># Or from Docker, map the port correctly:</span>
-<span class="l l-Scalar l-Scalar-Plain">docker run -p 8766:8766 tokenpak/tokenpak</span>
-</code></pre></div></p>
-<hr />
-<h2 id="requests-routing">Requests &amp; Routing<a class="headerlink" href="#requests-routing" title="Permanent link">&para;</a></h2>
-<h3 id="error-request-timeout-no-response-from-provider">Error: "Request timeout: no response from provider"<a class="headerlink" href="#error-request-timeout-no-response-from-provider" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> Requests take &gt;30s and fail with timeout.</p>
-<p><strong>Likely cause:</strong> Provider is slow, rate-limited, or unreachable.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Increase timeout in proxy.yaml</span>
-<span class="nt">providers</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">anthropic</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">timeout_seconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">60</span><span class="w">  </span><span class="c1"># Default is 30</span>
-
-<span class="c1"># Or check provider status</span>
-<span class="l l-Scalar l-Scalar-Plain">tokenpak provider-status anthropic</span>
-
-<span class="c1"># If the provider is actually down:</span>
-<span class="c1"># TokenPak will automatically try fallback providers</span>
-</code></pre></div></p>
-<h3 id="error-invalid-api-key-for-provider-openai">Error: "Invalid API key for provider: openai"<a class="headerlink" href="#error-invalid-api-key-for-provider-openai" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> All requests fail with "Authentication failed" or "Invalid API key."</p>
-<p><strong>Likely cause:</strong> API key is wrong, expired, or doesn't have the right permissions.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Verify the key is correct (check your provider dashboard)</span>
-<span class="c1"># Keys are often long strings starting with specific prefixes:</span>
-<span class="c1"># - Anthropic: sk-ant-...</span>
-<span class="c1"># - OpenAI: sk-...</span>
-
-<span class="c1"># Test the key directly</span>
-curl<span class="w"> </span>https://api.openai.com/v1/models<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Bearer </span><span class="nv">$OPENAI_API_KEY</span><span class="s2">&quot;</span>
-
-<span class="c1"># If that fails, the key is invalid</span>
-<span class="c1"># If it works, TokenPak should work too</span>
-
-<span class="c1"># Check that the key has the right permissions:</span>
-<span class="c1"># - OpenAI keys need &quot;API access&quot; enabled</span>
-<span class="c1"># - Anthropic keys need to be for the right project</span>
-</code></pre></div></p>
-<h3 id="error-model-not-supported-by-provider">Error: "Model not supported by provider"<a class="headerlink" href="#error-model-not-supported-by-provider" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> You request GPT-4, but the provider only has GPT-3.5.</p>
-<p><strong>Likely cause:</strong> The model isn't available in the provider, or it's not in your API tier.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Check available models:</span>
-tokenpak<span class="w"> </span>list-models<span class="w"> </span>openai
-
-<span class="c1"># If the model exists but isn&#39;t available to you:</span>
-<span class="c1"># - Check your API tier (free vs paid)</span>
-<span class="c1"># - Check your quota (some models are limited)</span>
-<span class="c1"># - For Claude, you may need to request early access</span>
-
-<span class="c1"># Use a model you have access to:</span>
-<span class="c1"># - OpenAI: gpt-3.5-turbo (always available)</span>
-<span class="c1"># - Claude: claude-3-haiku (free tier)</span>
-</code></pre></div></p>
-<h3 id="error-rate-limit-exceeded">Error: "Rate limit exceeded"<a class="headerlink" href="#error-rate-limit-exceeded" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> Requests fail with <code>429 Too Many Requests</code> or "Rate limit exceeded."</p>
-<p><strong>Likely cause:</strong> You're hitting the provider's rate limits (requests per minute, tokens per day, etc.).</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Configure rate limits in proxy.yaml:</span>
-<span class="nt">rate_limiting</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">anthropic</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">rpm</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">50</span><span class="w">  </span><span class="c1"># Requests per minute</span>
-<span class="w">  </span><span class="nt">openai</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">rpm</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">60</span>
-
-<span class="c1"># TokenPak will queue requests and respect these limits</span>
-
-<span class="c1"># Or check your provider&#39;s actual limits:</span>
-<span class="c1"># - Claude: varies by tier (check https://console.anthropic.com)</span>
-<span class="c1"># - OpenAI: varies by tier (check https://platform.openai.com/account/rate-limits)</span>
-
-<span class="c1"># If you hit a hard limit, you&#39;ll need to upgrade your tier</span>
-</code></pre></div></p>
-<h3 id="error-fallback-provider-also-failed">Error: "Fallback provider also failed"<a class="headerlink" href="#error-fallback-provider-also-failed" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> Request fails even though both primary and fallback providers are configured.</p>
-<p><strong>Likely cause:</strong> Both providers are either down, rate-limited, or having auth issues.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Check provider status</span>
-tokenpak<span class="w"> </span>provider-status
-
-<span class="c1"># Check API keys for all providers</span>
-tokenpak<span class="w"> </span>doctor
-
-<span class="c1"># If a provider is temporarily down, TokenPak will mark it as unhealthy</span>
-<span class="c1"># and only use it again after a recovery check (default 30s)</span>
-
-<span class="c1"># To force a provider back into rotation</span>
-tokenpak<span class="w"> </span>provider-force-health<span class="w"> </span>anthropic<span class="w"> </span>healthy
-
-<span class="c1"># Add more fallbacks in proxy.yaml:</span>
-routing:
-<span class="w">  </span>primary:<span class="w"> </span>anthropic
-<span class="w">  </span>fallback:<span class="w"> </span><span class="o">[</span>openai,<span class="w"> </span>gemini<span class="o">]</span>
-</code></pre></div></p>
-<hr />
-<h2 id="cost-observability">Cost &amp; Observability<a class="headerlink" href="#cost-observability" title="Permanent link">&para;</a></h2>
-<h3 id="error-cost-calculation-mismatch-with-provider">Error: "Cost calculation mismatch with provider"<a class="headerlink" href="#error-cost-calculation-mismatch-with-provider" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> TokenPak reports a different cost than the provider's billing.</p>
-<p><strong>Likely cause:</strong> TokenPak uses list pricing; you may have negotiated rates.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Configure custom pricing in proxy.yaml:</span>
-<span class="nt">providers</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">anthropic</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">pricing</span><span class="p">:</span>
-<span class="w">      </span><span class="nt">input_cost_per_1m_tokens</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3.00</span><span class="w">  </span><span class="c1"># cents</span>
-<span class="w">      </span><span class="nt">output_cost_per_1m_tokens</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">15.00</span>
-
-<span class="c1"># Check TokenPak&#39;s calculated costs:</span>
-<span class="l l-Scalar l-Scalar-Plain">tokenpak cost-breakdown</span>
-
-<span class="c1"># If you have enterprise pricing, contact us for custom rates</span>
-</code></pre></div></p>
-<h3 id="error-missing-cost-data-for-new-model">Error: "Missing cost data for new model"<a class="headerlink" href="#error-missing-cost-data-for-new-model" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> TokenPak doesn't have pricing for a new model you're using.</p>
-<p><strong>Likely cause:</strong> The model was released recently, or it's in beta.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Check what models have pricing</span>
-tokenpak<span class="w"> </span>list-pricing
-
-<span class="c1"># If a model is missing, add it manually:</span>
-<span class="c1"># Edit proxy.yaml with the pricing from the provider&#39;s docs</span>
-
-<span class="c1"># Or request it be added to TokenPak</span>
-<span class="c1"># (Create a GitHub issue with the model name and pricing)</span>
-</code></pre></div></p>
-<h3 id="error-no-logs-or-metrics-visible">Error: "No logs or metrics visible"<a class="headerlink" href="#error-no-logs-or-metrics-visible" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> No request logs in stdout, and <code>/metrics</code> endpoint is empty.</p>
-<p><strong>Likely cause:</strong> Logging might be disabled, or you're not hitting any requests.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Enable logging in proxy.yaml:</span>
-<span class="nt">logging</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;info&quot;</span><span class="w">  </span><span class="c1"># or &quot;debug&quot;</span>
-<span class="w">  </span><span class="nt">format</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;json&quot;</span><span class="w">  </span><span class="c1"># for structured logs</span>
-
-<span class="c1"># Verify metrics are being collected:</span>
-<span class="l l-Scalar l-Scalar-Plain">curl http://localhost:8766/metrics</span>
-
-<span class="c1"># If still empty, make a test request first:</span>
-<span class="l l-Scalar l-Scalar-Plain">curl -X POST http://localhost:8766/v1/messages \</span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">-H &quot;Content-Type</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">application/json&quot; \</span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">-H &quot;Authorization</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bearer dummy&quot; \</span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">-d &#39;{&quot;model&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;claude-3&quot;</span><span class="err">,</span><span class="w"> </span><span class="s">&quot;messages&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="p p-Indicator">[{</span><span class="s">&quot;role&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;user&quot;</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;content&quot;</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="s">&quot;test&quot;</span><span class="p p-Indicator">}]</span><span class="err">}</span><span class="s">&#39;</span>
-</code></pre></div></p>
-<hr />
-<h2 id="advanced">Advanced<a class="headerlink" href="#advanced" title="Permanent link">&para;</a></h2>
-<h3 id="error-vault-index-not-loading">Error: "Vault index not loading"<a class="headerlink" href="#error-vault-index-not-loading" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> TokenPak fails to start with "Vault index missing" or "Index format invalid."</p>
-<p><strong>Likely cause:</strong> Vault index is corrupted or out of sync.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Rebuild the vault index</span>
-tokenpak<span class="w"> </span>rebuild-vault-index
-
-<span class="c1"># Or clear and let it regenerate</span>
-rm<span class="w"> </span>-f<span class="w"> </span>~/.tokenpak/vault-index.json
-tokenpak<span class="w"> </span>serve<span class="w">  </span><span class="c1"># Will regenerate on startup</span>
-</code></pre></div></p>
-<h3 id="error-memory-usage-growing-unbounded">Error: "Memory usage growing unbounded"<a class="headerlink" href="#error-memory-usage-growing-unbounded" title="Permanent link">&para;</a></h3>
-<p><strong>Symptom:</strong> TokenPak's memory usage keeps increasing (cache leak).</p>
-<p><strong>Likely cause:</strong> Cache isn't evicting old entries, or there's a memory leak.</p>
-<p><strong>Fix:</strong>
-<div class="highlight"><pre><span></span><code><span class="c1"># Configure cache limits in proxy.yaml:</span>
-<span class="nt">cache</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">max_size_mb</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">256</span><span class="w">  </span><span class="c1"># Max cache size</span>
-<span class="w">  </span><span class="nt">ttl_seconds</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">3600</span><span class="w">  </span><span class="c1"># Entries expire after 1 hour</span>
-<span class="w">  </span><span class="nt">eviction_policy</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;lru&quot;</span><span class="w">  </span><span class="c1"># Least recently used</span>
-
-<span class="c1"># Check cache stats:</span>
-<span class="l l-Scalar l-Scalar-Plain">tokenpak cache-stats</span>
-
-<span class="c1"># If memory still grows, file a bug with logs:</span>
-<span class="l l-Scalar l-Scalar-Plain">tokenpak serve --debug &gt; tokenpak.log 2&gt;&amp;1</span>
-<span class="c1"># Run for a while, then attach the log to an issue</span>
-</code></pre></div></p>
-<h3 id="getting-help">Getting Help<a class="headerlink" href="#getting-help" title="Permanent link">&para;</a></h3>
-<p>If nothing above fixes your issue:</p>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
 <ol>
-<li>
-<p><strong>Gather diagnostics:</strong>
-   <div class="highlight"><pre><span></span><code>tokenpak<span class="w"> </span>doctor<span class="w"> </span>&gt;<span class="w"> </span>diagnostics.txt
-</code></pre></div></p>
-</li>
-<li>
-<p><strong>Enable debug logging:</strong>
-   <div class="highlight"><pre><span></span><code><span class="nt">logging</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">level</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;debug&quot;</span>
-</code></pre></div></p>
-</li>
-<li>
-<p><strong>Open an issue on GitHub:</strong></p>
-</li>
-<li>Include the output of <code>tokenpak doctor</code></li>
-<li>Include relevant logs (with API keys redacted)</li>
-<li>Include your OS, Python version, and TokenPak version</li>
-<li>
-<p>Describe the exact steps to reproduce</p>
-</li>
-<li>
-<p><strong>Ask in Discussions:</strong></p>
-</li>
-<li>If you're unsure whether it's a bug, start a Discussion first</li>
+<li><a href="#1-cant-connect">Can't Connect</a></li>
+<li><a href="#2-401-unauthorized">401 Unauthorized</a></li>
+<li><a href="#3-provider-errors-502">Provider Errors (502)</a></li>
+<li><a href="#4-rate-limit-errors-429">Rate Limit Errors (429)</a></li>
+<li><a href="#5-config-wont-load">Config Won't Load</a></li>
+<li><a href="#6-docker-container-exits-immediately">Docker Container Exits Immediately</a></li>
+<li><a href="#7-pip-install-fails">pip install Fails</a></li>
+<li><a href="#8-high-latency">High Latency</a></li>
+<li><a href="#9-cost-data-missing-or-zero">Cost Data Missing or Zero</a></li>
+<li><a href="#10-logs-not-showing--wrong-level">Logs Not Showing / Wrong Level</a></li>
+<li><a href="#11-cache-not-working">Cache Not Working</a></li>
+<li><a href="#12-compression-not-reducing-tokens">Compression Not Reducing Tokens</a></li>
+<li><a href="#getting-more-help">Getting More Help</a></li>
 </ol>
-<p>We'll help you get it running!</p>
+<hr />
+<h2 id="1-cant-connect">1. Can't Connect<a class="headerlink" href="#1-cant-connect" title="Permanent link">&para;</a></h2>
+<h3 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h3>
+<p>Client gets "Connection refused" or hangs when trying to reach the TokenPak proxy.</p>
+<h3 id="diagnose">Diagnose<a class="headerlink" href="#diagnose" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Is the proxy running?</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;tokenpak|proxy&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>grep
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1"># Is anything listening on the expected port?</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>ss<span class="w"> </span>-ltnp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>:8766
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># Can you reach it locally?</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>curl<span class="w"> </span>-fsS<span class="w"> </span>http://127.0.0.1:8766/health
+</code></pre></div>
+<h3 id="cause-a-proxy-not-running">Cause A: Proxy not running<a class="headerlink" href="#cause-a-proxy-not-running" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Start the proxy</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>tokenpak<span class="w"> </span>serve
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Or start via Python module</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>python<span class="w"> </span>-m<span class="w"> </span>tokenpak<span class="w"> </span>proxy<span class="w"> </span>--port<span class="w"> </span><span class="m">8766</span>
+</code></pre></div></p>
+<h3 id="cause-b-wrong-port">Cause B: Wrong port<a class="headerlink" href="#cause-b-wrong-port" title="Permanent link">&para;</a></h3>
+<p>The default port is <code>8766</code>. If you changed it, make sure your client matches.</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Check what port the proxy is configured to use</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$TOKENPAK_PORT</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Start on a specific port</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>tokenpak<span class="w"> </span>serve<span class="w"> </span>--port<span class="w"> </span><span class="m">8766</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="c1"># Or set via environment</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_PORT</span><span class="o">=</span><span class="m">8766</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<h3 id="cause-c-firewall-blocking-the-port">Cause C: Firewall blocking the port<a class="headerlink" href="#cause-c-firewall-blocking-the-port" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Check if firewall is blocking (Linux)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>sudo<span class="w"> </span>iptables<span class="w"> </span>-L<span class="w"> </span>-n<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="m">8766</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Allow the port (ufw)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>sudo<span class="w"> </span>ufw<span class="w"> </span>allow<span class="w"> </span><span class="m">8766</span>/tcp
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Allow the port (firewalld)</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>sudo<span class="w"> </span>firewall-cmd<span class="w"> </span>--add-port<span class="o">=</span><span class="m">8766</span>/tcp<span class="w"> </span>--permanent
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>sudo<span class="w"> </span>firewall-cmd<span class="w"> </span>--reload
+</code></pre></div></p>
+<h3 id="cause-d-port-already-in-use-by-another-process">Cause D: Port already in use by another process<a class="headerlink" href="#cause-d-port-already-in-use-by-another-process" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Find what&#39;s using the port</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>sudo<span class="w"> </span>lsof<span class="w"> </span>-iTCP:8766<span class="w"> </span>-sTCP:LISTEN<span class="w"> </span>-n<span class="w"> </span>-P
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Kill the conflicting process (replace PID)</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="nb">kill</span><span class="w"> </span>&lt;PID&gt;
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="c1"># Or use a different port</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_PORT</span><span class="o">=</span><span class="m">8767</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<p>See also: <a href="../errors/#tp-e101-connection-error">TP-E101: Connection Error</a></p>
+<hr />
+<h2 id="2-401-unauthorized">2. 401 Unauthorized<a class="headerlink" href="#2-401-unauthorized" title="Permanent link">&para;</a></h2>
+<h3 id="problem_1">Problem<a class="headerlink" href="#problem_1" title="Permanent link">&para;</a></h3>
+<p>Requests to providers through TokenPak fail with <code>401 Unauthorized</code> or <code>Authentication failed</code>.</p>
+<h3 id="diagnose_1">Diagnose<a class="headerlink" href="#diagnose_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Check if API keys are set</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>printenv<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-iE<span class="w"> </span><span class="s1">&#39;ANTHROPIC_API_KEY|OPENAI_API_KEY&#39;</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Test the key directly (Anthropic example)</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>curl<span class="w"> </span>-s<span class="w"> </span>-o<span class="w"> </span>/dev/null<span class="w"> </span>-w<span class="w"> </span><span class="s2">&quot;%{http_code}&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;x-api-key: </span><span class="nv">$ANTHROPIC_API_KEY</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;content-type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;model&quot;:&quot;claude-haiku-3-5&quot;,&quot;max_tokens&quot;:10,&quot;messages&quot;:[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;hi&quot;}]}&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">  </span>https://api.anthropic.com/v1/messages
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="c1"># Should return 200. If 401, the key is bad.</span>
+</code></pre></div>
+<h3 id="cause-a-api-key-not-set-or-empty">Cause A: API key not set or empty<a class="headerlink" href="#cause-a-api-key-not-set-or-empty" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Set the key (Anthropic)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span><span class="s2">&quot;sk-ant-...&quot;</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># Set the key (OpenAI)</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_API_KEY</span><span class="o">=</span><span class="s2">&quot;sk-...&quot;</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># Restart TokenPak after setting keys</span>
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<h3 id="cause-b-api-key-is-wrong-or-expired">Cause B: API key is wrong or expired<a class="headerlink" href="#cause-b-api-key-is-wrong-or-expired" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+1. Go to the provider's console:
+   - Anthropic: https://console.anthropic.com/settings/keys
+   - OpenAI: https://platform.openai.com/api-keys
+2. Generate a new API key
+3. Update your environment variable
+4. Restart TokenPak</p>
+<h3 id="cause-c-key-not-passed-correctly-through-proxy">Cause C: Key not passed correctly through proxy<a class="headerlink" href="#cause-c-key-not-passed-correctly-through-proxy" title="Permanent link">&para;</a></h3>
+<p>The proxy must forward the <code>Authorization</code> or <code>x-api-key</code> header to the upstream provider.</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="c1"># Verify the proxy is forwarding auth headers</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>curl<span class="w"> </span>-v<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;x-api-key: </span><span class="nv">$ANTHROPIC_API_KEY</span><span class="s2">&quot;</span><span class="w"> </span>http://127.0.0.1:8766/v1/messages<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;authorization\|x-api-key&quot;</span>
+</code></pre></div></p>
+<p>If headers are stripped, check your proxy config for header forwarding rules.</p>
+<p>See also: <a href="../errors/#tp-e202-invalid-api-key">TP-E202: Invalid API Key</a>, <a href="../errors/#tp-e203-missing-api-key">TP-E203: Missing API Key</a></p>
+<hr />
+<h2 id="3-provider-errors-502">3. Provider Errors (502)<a class="headerlink" href="#3-provider-errors-502" title="Permanent link">&para;</a></h2>
+<h3 id="problem_2">Problem<a class="headerlink" href="#problem_2" title="Permanent link">&para;</a></h3>
+<p>TokenPak returns 502 Bad Gateway. The upstream provider (Anthropic, OpenAI, etc.) is unreachable or erroring.</p>
+<h3 id="diagnose_2">Diagnose<a class="headerlink" href="#diagnose_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="c1"># Check proxy health (should be 200)</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>curl<span class="w"> </span>-fsS<span class="w"> </span>http://127.0.0.1:8766/health
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="c1"># Test upstream provider directly (bypass TokenPak)</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>curl<span class="w"> </span>-s<span class="w"> </span>-o<span class="w"> </span>/dev/null<span class="w"> </span>-w<span class="w"> </span><span class="s2">&quot;%{http_code}&quot;</span><span class="w"> </span>https://api.anthropic.com/v1/messages
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="c1"># Should return 401 (no key) or 200 (with key). If timeout/5xx, provider is down.</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="c1"># Check provider status pages</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="c1"># Anthropic: https://status.anthropic.com</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="c1"># OpenAI: https://status.openai.com</span>
+</code></pre></div>
+<h3 id="cause-a-provider-is-having-an-outage">Cause A: Provider is having an outage<a class="headerlink" href="#cause-a-provider-is-having-an-outage" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+1. Check the provider status page (links above)
+2. Wait for the outage to resolve
+3. If you have multiple providers configured, TokenPak will failover automatically</p>
+<h3 id="cause-b-your-api-key-is-invalid-for-the-requested-model">Cause B: Your API key is invalid for the requested model<a class="headerlink" href="#cause-b-your-api-key-is-invalid-for-the-requested-model" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Test with a cheaper model first</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>curl<span class="w"> </span>-s<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;x-api-key: </span><span class="nv">$ANTHROPIC_API_KEY</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;content-type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;model&quot;:&quot;claude-haiku-3-5&quot;,&quot;max_tokens&quot;:10,&quot;messages&quot;:[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;test&quot;}]}&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="w">  </span>https://api.anthropic.com/v1/messages
+</code></pre></div></p>
+<p>If Haiku works but Opus doesn't, your account may not have access to that model tier.</p>
+<h3 id="cause-c-network-issue-between-tokenpak-and-provider">Cause C: Network issue between TokenPak and provider<a class="headerlink" href="#cause-c-network-issue-between-tokenpak-and-provider" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Check DNS resolution</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>nslookup<span class="w"> </span>api.anthropic.com
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1"># Check connectivity</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>curl<span class="w"> </span>-v<span class="w"> </span>--max-time<span class="w"> </span><span class="m">10</span><span class="w"> </span>https://api.anthropic.com<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-20
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="c1"># Check proxy/firewall rules for outbound HTTPS</span>
+</code></pre></div></p>
+<p>See also: <a href="../errors/#tp-e501-provider-error">TP-E501: Provider Error</a></p>
+<hr />
+<h2 id="4-rate-limit-errors-429">4. Rate Limit Errors (429)<a class="headerlink" href="#4-rate-limit-errors-429" title="Permanent link">&para;</a></h2>
+<h3 id="problem_3">Problem<a class="headerlink" href="#problem_3" title="Permanent link">&para;</a></h3>
+<p>Getting <code>429 Too Many Requests</code> from the provider through TokenPak.</p>
+<h3 id="diagnose_3">Diagnose<a class="headerlink" href="#diagnose_3" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Check the Retry-After header in the error response</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>curl<span class="w"> </span>-v<span class="w"> </span>http://127.0.0.1:8766/v1/messages<span class="w"> </span>...<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s2">&quot;retry-after&quot;</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># Check TokenPak&#39;s configured rate limit</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Local rate limit: </span><span class="nv">$TOKENPAK_RATE_LIMIT_RPM</span><span class="s2"> requests per minute&quot;</span>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="c1"># Default: 60 RPM</span>
+</code></pre></div>
+<h3 id="cause-a-exceeding-provider-rate-limits">Cause A: Exceeding provider rate limits<a class="headerlink" href="#cause-a-exceeding-provider-rate-limits" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+1. Wait the duration specified in <code>Retry-After</code>
+2. Reduce request frequency
+3. Upgrade your provider plan for higher limits</p>
+<h3 id="cause-b-tokenpaks-own-rate-limiter-is-too-strict">Cause B: TokenPak's own rate limiter is too strict<a class="headerlink" href="#cause-b-tokenpaks-own-rate-limiter-is-too-strict" title="Permanent link">&para;</a></h3>
+<p>The default is 60 requests per minute. If you need more:</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># Increase the local rate limit</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_RATE_LIMIT_RPM</span><span class="o">=</span><span class="m">120</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<h3 id="cause-c-multiple-clients-sharing-the-same-api-key">Cause C: Multiple clients sharing the same API key<a class="headerlink" href="#cause-c-multiple-clients-sharing-the-same-api-key" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+- Use separate API keys per client/agent if possible
+- If sharing a key, coordinate rate limits across clients
+- Configure TokenPak's rate limiter to stay under the shared quota</p>
+<p>See also: <a href="../errors/#tp-e301-rate-limit-exceeded">TP-E301: Rate Limit Exceeded</a></p>
+<hr />
+<h2 id="5-config-wont-load">5. Config Won't Load<a class="headerlink" href="#5-config-wont-load" title="Permanent link">&para;</a></h2>
+<h3 id="problem_4">Problem<a class="headerlink" href="#problem_4" title="Permanent link">&para;</a></h3>
+<p>TokenPak exits on startup with config-related errors, or loads with unexpected defaults.</p>
+<h3 id="diagnose_4">Diagnose<a class="headerlink" href="#diagnose_4" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># Check if a config file exists</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>ls<span class="w"> </span>-la<span class="w"> </span>~/.tokenpak/config.json<span class="w"> </span><span class="m">2</span>&gt;/dev/null<span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;No config file found&quot;</span>
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1"># Validate JSON syntax</span>
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>python3<span class="w"> </span>-m<span class="w"> </span>json.tool<span class="w"> </span>~/.tokenpak/config.json
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a><span class="c1"># Check environment variable overrides</span>
+<a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>printenv<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>TOKENPAK_
+</code></pre></div>
+<h3 id="cause-a-json-syntax-errors">Cause A: JSON syntax errors<a class="headerlink" href="#cause-a-json-syntax-errors" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># Find the error</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>json.tool<span class="w"> </span>~/.tokenpak/config.json
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="c1"># Python will report the line and column of the syntax error</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="c1"># Common issues:</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="c1"># - Trailing comma on last item in object/array</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="c1"># - Missing quotes on keys</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="c1"># - Single quotes instead of double quotes</span>
+</code></pre></div></p>
+<h3 id="cause-b-wrong-data-types">Cause B: Wrong data types<a class="headerlink" href="#cause-b-wrong-data-types" title="Permanent link">&para;</a></h3>
+<p>For example, <code>port</code> must be an integer, not a string.</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">{</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="w">  </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">8766</span><span class="p">,</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">  </span><span class="nt">&quot;mode&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;hybrid&quot;</span><span class="p">,</span>
+<a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">  </span><span class="nt">&quot;compression&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">    </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="w">    </span><span class="nt">&quot;threshold_tokens&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4500</span>
+<a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">  </span><span class="p">}</span>
+<a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="p">}</span>
+</code></pre></div></p>
+<p>Common type mistakes:
+- <code>"port": "8766"</code> → should be <code>"port": 8766</code>
+- <code>"enabled": "true"</code> → should be <code>"enabled": true</code>
+- <code>"threshold_tokens": "4500"</code> → should be <code>"threshold_tokens": 4500</code></p>
+<h3 id="cause-c-config-file-not-found">Cause C: Config file not found<a class="headerlink" href="#cause-c-config-file-not-found" title="Permanent link">&para;</a></h3>
+<p>TokenPak looks for config in this order:
+1. Path specified via <code>--config</code> flag
+2. <code>TOKENPAK_CONFIG</code> environment variable
+3. <code>~/.tokenpak/config.json</code>
+4. Environment variables (<code>TOKENPAK_PORT</code>, <code>TOKENPAK_MODE</code>, etc.)
+5. Built-in defaults</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># Create a minimal config</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.tokenpak
+<a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>cat<span class="w"> </span>&gt;<span class="w"> </span>~/.tokenpak/config.json<span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
+<a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a><span class="s">{</span>
+<a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a><span class="s">  &quot;port&quot;: 8766,</span>
+<a id="__codelineno-16-6" name="__codelineno-16-6" href="#__codelineno-16-6"></a><span class="s">  &quot;mode&quot;: &quot;hybrid&quot;</span>
+<a id="__codelineno-16-7" name="__codelineno-16-7" href="#__codelineno-16-7"></a><span class="s">}</span>
+<a id="__codelineno-16-8" name="__codelineno-16-8" href="#__codelineno-16-8"></a><span class="s">EOF</span>
+<a id="__codelineno-16-9" name="__codelineno-16-9" href="#__codelineno-16-9"></a>
+<a id="__codelineno-16-10" name="__codelineno-16-10" href="#__codelineno-16-10"></a><span class="c1"># Or just use env vars (no config file needed)</span>
+<a id="__codelineno-16-11" name="__codelineno-16-11" href="#__codelineno-16-11"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_PORT</span><span class="o">=</span><span class="m">8766</span>
+<a id="__codelineno-16-12" name="__codelineno-16-12" href="#__codelineno-16-12"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_MODE</span><span class="o">=</span>hybrid
+<a id="__codelineno-16-13" name="__codelineno-16-13" href="#__codelineno-16-13"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<p>See also: <a href="../errors/#tp-e001-config-error">TP-E001: Config Error</a>, <a href="../errors/#tp-e004-invalid-config-file">TP-E004: Invalid Config File</a></p>
+<hr />
+<h2 id="6-docker-container-exits-immediately">6. Docker Container Exits Immediately<a class="headerlink" href="#6-docker-container-exits-immediately" title="Permanent link">&para;</a></h2>
+<h3 id="problem_5">Problem<a class="headerlink" href="#problem_5" title="Permanent link">&para;</a></h3>
+<p><code>docker run tokenpak</code> starts then immediately stops. <code>docker ps</code> shows the container as exited.</p>
+<h3 id="diagnose_5">Diagnose<a class="headerlink" href="#diagnose_5" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># Check exit code and logs</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>docker<span class="w"> </span>ps<span class="w"> </span>-a<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>tokenpak
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>docker<span class="w"> </span>logs<span class="w"> </span>&lt;container_id&gt;
+<a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>
+<a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="c1"># Check if config volume is mounted</span>
+<a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a>docker<span class="w"> </span>inspect<span class="w"> </span>&lt;container_id&gt;<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-A5<span class="w"> </span>Mounts
+</code></pre></div>
+<h3 id="cause-a-missing-environment-variables">Cause A: Missing environment variables<a class="headerlink" href="#cause-a-missing-environment-variables" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span><span class="s2">&quot;sk-ant-...&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">TOKENPAK_PORT</span><span class="o">=</span><span class="m">8766</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">8766</span>:8766<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">  </span>tokenpak:latest
+</code></pre></div></p>
+<h3 id="cause-b-port-conflict-inside-container">Cause B: Port conflict inside container<a class="headerlink" href="#cause-b-port-conflict-inside-container" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># Ensure TOKENPAK_PORT matches the EXPOSE and -p mapping</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">TOKENPAK_PORT</span><span class="o">=</span><span class="m">8766</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">8766</span>:8766<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">  </span>tokenpak:latest
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="c1"># If you change the port, update all three:</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">TOKENPAK_PORT</span><span class="o">=</span><span class="m">9000</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">9000</span>:9000<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="w">  </span>tokenpak:latest
+</code></pre></div></p>
+<h3 id="cause-c-config-path-doesnt-exist-in-container">Cause C: Config path doesn't exist in container<a class="headerlink" href="#cause-c-config-path-doesnt-exist-in-container" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="c1"># Mount your config file</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>docker<span class="w"> </span>run<span class="w"> </span>-d<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">  </span>-v<span class="w"> </span>~/.tokenpak/config.json:/app/config.json<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">  </span>-e<span class="w"> </span><span class="nv">TOKENPAK_CONFIG</span><span class="o">=</span>/app/config.json<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">  </span>-p<span class="w"> </span><span class="m">8766</span>:8766<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">  </span>tokenpak:latest
+</code></pre></div></p>
+<h3 id="cause-d-python-version-mismatch-in-image">Cause D: Python version mismatch in image<a class="headerlink" href="#cause-d-python-version-mismatch-in-image" title="Permanent link">&para;</a></h3>
+<p>TokenPak requires Python ≥ 3.10. The official Dockerfile uses 3.11.</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="c1"># Rebuild with correct base</span>
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>docker<span class="w"> </span>build<span class="w"> </span>--no-cache<span class="w"> </span>-t<span class="w"> </span>tokenpak:latest<span class="w"> </span>.
+<a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>
+<a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="c1"># Verify Python version in container</span>
+<a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>docker<span class="w"> </span>run<span class="w"> </span>--rm<span class="w"> </span>tokenpak:latest<span class="w"> </span>python<span class="w"> </span>-V
+</code></pre></div></p>
+<hr />
+<h2 id="7-pip-install-fails">7. pip install Fails<a class="headerlink" href="#7-pip-install-fails" title="Permanent link">&para;</a></h2>
+<h3 id="problem_6">Problem<a class="headerlink" href="#problem_6" title="Permanent link">&para;</a></h3>
+<p><code>pip install tokenpak</code> fails with errors.</p>
+<h3 id="diagnose_6">Diagnose<a class="headerlink" href="#diagnose_6" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="c1"># Check Python version</span>
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>python3<span class="w"> </span>--version
+<a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="c1"># Must be &gt;= 3.10</span>
+<a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>
+<a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a><span class="c1"># Check pip version</span>
+<a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>pip<span class="w"> </span>--version
+<a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>
+<a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a><span class="c1"># Try verbose install to see the full error</span>
+<a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>pip<span class="w"> </span>install<span class="w"> </span>tokenpak<span class="w"> </span>-v<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-30
+</code></pre></div>
+<h3 id="cause-a-python-version-too-old">Cause A: Python version too old<a class="headerlink" href="#cause-a-python-version-too-old" title="Permanent link">&para;</a></h3>
+<p>TokenPak requires Python ≥ 3.10.</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># Check version</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>python3<span class="w"> </span>--version
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="c1"># If &lt; 3.10, install a newer Python</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a><span class="c1"># Ubuntu/Debian:</span>
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3.11<span class="w"> </span>python3.11-venv
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>
+<a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="c1"># macOS (Homebrew):</span>
+<a id="__codelineno-23-9" name="__codelineno-23-9" href="#__codelineno-23-9"></a>brew<span class="w"> </span>install<span class="w"> </span>python@3.11
+<a id="__codelineno-23-10" name="__codelineno-23-10" href="#__codelineno-23-10"></a>
+<a id="__codelineno-23-11" name="__codelineno-23-11" href="#__codelineno-23-11"></a><span class="c1"># Create a venv with the right version</span>
+<a id="__codelineno-23-12" name="__codelineno-23-12" href="#__codelineno-23-12"></a>python3.11<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>~/.tokenpak-venv
+<a id="__codelineno-23-13" name="__codelineno-23-13" href="#__codelineno-23-13"></a><span class="nb">source</span><span class="w"> </span>~/.tokenpak-venv/bin/activate
+<a id="__codelineno-23-14" name="__codelineno-23-14" href="#__codelineno-23-14"></a>pip<span class="w"> </span>install<span class="w"> </span>tokenpak
+</code></pre></div></p>
+<h3 id="cause-b-dependency-conflict">Cause B: Dependency conflict<a class="headerlink" href="#cause-b-dependency-conflict" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># Use a fresh virtual environment (recommended)</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>~/.tokenpak-venv
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="nb">source</span><span class="w"> </span>~/.tokenpak-venv/bin/activate
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
+<a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>pip<span class="w"> </span>install<span class="w"> </span>tokenpak
+<a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>
+<a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="c1"># If a specific dependency conflicts:</span>
+<a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>pip<span class="w"> </span>install<span class="w"> </span>tokenpak<span class="w"> </span>--no-deps
+<a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>&lt;<span class="o">(</span>pip<span class="w"> </span>show<span class="w"> </span>tokenpak<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Requires<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/Requires: //&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;,&#39;</span><span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="o">)</span>
+</code></pre></div></p>
+<h3 id="cause-c-missing-system-dependencies">Cause C: Missing system dependencies<a class="headerlink" href="#cause-c-missing-system-dependencies" title="Permanent link">&para;</a></h3>
+<p>Some optional features need system libraries (e.g., Pillow for image compression).</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># Ubuntu/Debian</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>python3-dev<span class="w"> </span>libjpeg-dev<span class="w"> </span>zlib1g-dev
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="c1"># macOS</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a>brew<span class="w"> </span>install<span class="w"> </span>libjpeg<span class="w"> </span>zlib
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="c1"># Then retry</span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a>pip<span class="w"> </span>install<span class="w"> </span>tokenpak
+</code></pre></div></p>
+<hr />
+<h2 id="8-high-latency">8. High Latency<a class="headerlink" href="#8-high-latency" title="Permanent link">&para;</a></h2>
+<h3 id="problem_7">Problem<a class="headerlink" href="#problem_7" title="Permanent link">&para;</a></h3>
+<p>Requests through TokenPak are noticeably slower than going directly to the provider.</p>
+<h3 id="diagnose_7">Diagnose<a class="headerlink" href="#diagnose_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># Measure TokenPak overhead vs direct provider</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="c1"># Step 1: Time through TokenPak</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a><span class="nb">time</span><span class="w"> </span>curl<span class="w"> </span>-s<span class="w"> </span>-o<span class="w"> </span>/dev/null<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-4" name="__codelineno-26-4" href="#__codelineno-26-4"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;x-api-key: </span><span class="nv">$ANTHROPIC_API_KEY</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-5" name="__codelineno-26-5" href="#__codelineno-26-5"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;content-type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-6" name="__codelineno-26-6" href="#__codelineno-26-6"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;model&quot;:&quot;claude-haiku-3-5&quot;,&quot;max_tokens&quot;:10,&quot;messages&quot;:[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;hi&quot;}]}&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-7" name="__codelineno-26-7" href="#__codelineno-26-7"></a><span class="w">  </span>http://127.0.0.1:8766/v1/messages
+<a id="__codelineno-26-8" name="__codelineno-26-8" href="#__codelineno-26-8"></a>
+<a id="__codelineno-26-9" name="__codelineno-26-9" href="#__codelineno-26-9"></a><span class="c1"># Step 2: Time direct to provider</span>
+<a id="__codelineno-26-10" name="__codelineno-26-10" href="#__codelineno-26-10"></a><span class="nb">time</span><span class="w"> </span>curl<span class="w"> </span>-s<span class="w"> </span>-o<span class="w"> </span>/dev/null<span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-11" name="__codelineno-26-11" href="#__codelineno-26-11"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;x-api-key: </span><span class="nv">$ANTHROPIC_API_KEY</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-12" name="__codelineno-26-12" href="#__codelineno-26-12"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;anthropic-version: 2023-06-01&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-13" name="__codelineno-26-13" href="#__codelineno-26-13"></a><span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;content-type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-14" name="__codelineno-26-14" href="#__codelineno-26-14"></a><span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;model&quot;:&quot;claude-haiku-3-5&quot;,&quot;max_tokens&quot;:10,&quot;messages&quot;:[{&quot;role&quot;:&quot;user&quot;,&quot;content&quot;:&quot;hi&quot;}]}&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-26-15" name="__codelineno-26-15" href="#__codelineno-26-15"></a><span class="w">  </span>https://api.anthropic.com/v1/messages
+<a id="__codelineno-26-16" name="__codelineno-26-16" href="#__codelineno-26-16"></a>
+<a id="__codelineno-26-17" name="__codelineno-26-17" href="#__codelineno-26-17"></a><span class="c1"># The difference is TokenPak overhead. Should be &lt; 50ms.</span>
+</code></pre></div>
+<h3 id="cause-a-provider-latency-not-tokenpak">Cause A: Provider latency (not TokenPak)<a class="headerlink" href="#cause-a-provider-latency-not-tokenpak" title="Permanent link">&para;</a></h3>
+<p>If both times are slow, the provider is slow. TokenPak can't fix upstream latency.</p>
+<p><strong>Fix:</strong>
+- Check provider status page
+- Try a different model (Haiku is faster than Opus)
+- Wait for the provider to recover</p>
+<h3 id="cause-b-compression-overhead-on-large-prompts">Cause B: Compression overhead on large prompts<a class="headerlink" href="#cause-b-compression-overhead-on-large-prompts" title="Permanent link">&para;</a></h3>
+<p>Compression processing time scales with input size. For very large prompts (&gt;50K tokens), this can add noticeable latency.</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="c1"># Disable compression if latency matters more than cost</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_COMPACT</span><span class="o">=</span><span class="m">0</span>
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>tokenpak<span class="w"> </span>serve
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="c1"># Or increase the compression threshold (only compress large prompts)</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_COMPACT_THRESHOLD_TOKENS</span><span class="o">=</span><span class="m">10000</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<h3 id="cause-c-slow-disk-io-affects-cache-and-telemetry">Cause C: Slow disk I/O (affects cache and telemetry)<a class="headerlink" href="#cause-c-slow-disk-io-affects-cache-and-telemetry" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># Check disk performance</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/zero<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/tmp/testfile<span class="w"> </span><span class="nv">bs</span><span class="o">=</span>1M<span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="m">100</span><span class="w"> </span><span class="nv">oflag</span><span class="o">=</span>direct<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-1
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1"># If slow, move the database to faster storage</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_DB</span><span class="o">=</span>/fast-ssd/.tokenpak/telemetry.db
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<hr />
+<h2 id="9-cost-data-missing-or-zero">9. Cost Data Missing or Zero<a class="headerlink" href="#9-cost-data-missing-or-zero" title="Permanent link">&para;</a></h2>
+<h3 id="problem_8">Problem<a class="headerlink" href="#problem_8" title="Permanent link">&para;</a></h3>
+<p>The dashboard or <code>tokenpak cost</code> shows $0.00 or empty data even though requests are going through.</p>
+<h3 id="diagnose_8">Diagnose<a class="headerlink" href="#diagnose_8" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="c1"># Check if telemetry DB has data</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="s2">from tokenpak.telemetry.storage import TelemetryDB</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="s2">from pathlib import Path</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="s2">db = TelemetryDB(str(Path.home() / &#39;.tokenpak/telemetry.db&#39;))</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="s2">stats = db.stats()</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="s2">print(stats)</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a><span class="s2">db.close()</span>
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="s2">&quot;</span>
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a>
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="c1"># Check if events are being recorded</span>
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a><span class="s2">from tokenpak.telemetry.storage import TelemetryDB</span>
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a><span class="s2">from pathlib import Path</span>
+<a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a><span class="s2">db = TelemetryDB(str(Path.home() / &#39;.tokenpak/telemetry.db&#39;))</span>
+<a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a><span class="s2">traces = db.list_traces(limit=5)</span>
+<a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a><span class="s2">for t in traces:</span>
+<a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a><span class="s2">    print(f&#39;  trace={t[\&quot;trace_id\&quot;][:12]}... cost={t.get(\&quot;actual_cost\&quot;, 0):.4f}&#39;)</span>
+<a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a><span class="s2">db.close()</span>
+<a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a><span class="s2">&quot;</span>
+</code></pre></div>
+<h3 id="cause-a-telemetry-database-doesnt-exist">Cause A: Telemetry database doesn't exist<a class="headerlink" href="#cause-a-telemetry-database-doesnt-exist" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="c1"># Check the DB path</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>ls<span class="w"> </span>-la<span class="w"> </span>~/.tokenpak/telemetry.db
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="c1"># If missing, it will be created automatically on next proxy start</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<h3 id="cause-b-events-recorded-but-no-cost-data">Cause B: Events recorded but no cost data<a class="headerlink" href="#cause-b-events-recorded-but-no-cost-data" title="Permanent link">&para;</a></h3>
+<p>The cost table may be empty even when events exist. This happens if the pricing lookup fails (unsupported model or missing pricing data).</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="c1"># Backfill baseline costs from existing data</span>
+<a id="__codelineno-31-2" name="__codelineno-31-2" href="#__codelineno-31-2"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-31-3" name="__codelineno-31-3" href="#__codelineno-31-3"></a><span class="s2">from tokenpak.telemetry.storage import TelemetryDB</span>
+<a id="__codelineno-31-4" name="__codelineno-31-4" href="#__codelineno-31-4"></a><span class="s2">from pathlib import Path</span>
+<a id="__codelineno-31-5" name="__codelineno-31-5" href="#__codelineno-31-5"></a><span class="s2">db = TelemetryDB(str(Path.home() / &#39;.tokenpak/telemetry.db&#39;))</span>
+<a id="__codelineno-31-6" name="__codelineno-31-6" href="#__codelineno-31-6"></a><span class="s2">result = db.backfill_baseline_costs()</span>
+<a id="__codelineno-31-7" name="__codelineno-31-7" href="#__codelineno-31-7"></a><span class="s2">print(f&#39;Eligible: {result[\&quot;eligible\&quot;]}, Updated: {result[\&quot;updated\&quot;]}, Skipped: {result[\&quot;skipped\&quot;]}&#39;)</span>
+<a id="__codelineno-31-8" name="__codelineno-31-8" href="#__codelineno-31-8"></a><span class="s2">db.close()</span>
+<a id="__codelineno-31-9" name="__codelineno-31-9" href="#__codelineno-31-9"></a><span class="s2">&quot;</span>
+</code></pre></div></p>
+<h3 id="cause-c-provider-doesnt-report-usage">Cause C: Provider doesn't report usage<a class="headerlink" href="#cause-c-provider-doesnt-report-usage" title="Permanent link">&para;</a></h3>
+<p>Some providers or endpoints don't include token usage in their response.</p>
+<p><strong>Fix:</strong>
+Check the <code>usage_source</code> field in the tp_usage table:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-32-2" name="__codelineno-32-2" href="#__codelineno-32-2"></a><span class="s2">import sqlite3</span>
+<a id="__codelineno-32-3" name="__codelineno-32-3" href="#__codelineno-32-3"></a><span class="s2">from pathlib import Path</span>
+<a id="__codelineno-32-4" name="__codelineno-32-4" href="#__codelineno-32-4"></a><span class="s2">conn = sqlite3.connect(str(Path.home() / &#39;.tokenpak/telemetry.db&#39;))</span>
+<a id="__codelineno-32-5" name="__codelineno-32-5" href="#__codelineno-32-5"></a><span class="s2">for row in conn.execute(&#39;SELECT usage_source, COUNT(*) FROM tp_usage GROUP BY usage_source&#39;).fetchall():</span>
+<a id="__codelineno-32-6" name="__codelineno-32-6" href="#__codelineno-32-6"></a><span class="s2">    print(f&#39;  {row[0]}: {row[1]} records&#39;)</span>
+<a id="__codelineno-32-7" name="__codelineno-32-7" href="#__codelineno-32-7"></a><span class="s2">conn.close()</span>
+<a id="__codelineno-32-8" name="__codelineno-32-8" href="#__codelineno-32-8"></a><span class="s2">&quot;</span>
+</code></pre></div></p>
+<p>If most records show <code>unknown</code>, the provider responses aren't including usage data.</p>
+<hr />
+<h2 id="10-logs-not-showing-wrong-level">10. Logs Not Showing / Wrong Level<a class="headerlink" href="#10-logs-not-showing-wrong-level" title="Permanent link">&para;</a></h2>
+<h3 id="problem_9">Problem<a class="headerlink" href="#problem_9" title="Permanent link">&para;</a></h3>
+<p>TokenPak logs are missing, empty, or not showing enough detail to debug issues.</p>
+<h3 id="diagnose_9">Diagnose<a class="headerlink" href="#diagnose_9" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="c1"># Check current log level</span>
+<a id="__codelineno-33-2" name="__codelineno-33-2" href="#__codelineno-33-2"></a><span class="nb">echo</span><span class="w"> </span><span class="nv">$TOKENPAK_LOG_LEVEL</span>
+<a id="__codelineno-33-3" name="__codelineno-33-3" href="#__codelineno-33-3"></a><span class="c1"># Empty means default (info)</span>
+<a id="__codelineno-33-4" name="__codelineno-33-4" href="#__codelineno-33-4"></a>
+<a id="__codelineno-33-5" name="__codelineno-33-5" href="#__codelineno-33-5"></a><span class="c1"># Check if logs are going to a file</span>
+<a id="__codelineno-33-6" name="__codelineno-33-6" href="#__codelineno-33-6"></a>ls<span class="w"> </span>-la<span class="w"> </span>~/.tokenpak/*.log<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+<a id="__codelineno-33-7" name="__codelineno-33-7" href="#__codelineno-33-7"></a>
+<a id="__codelineno-33-8" name="__codelineno-33-8" href="#__codelineno-33-8"></a><span class="c1"># Check systemd journal (if running as service)</span>
+<a id="__codelineno-33-9" name="__codelineno-33-9" href="#__codelineno-33-9"></a>journalctl<span class="w"> </span>--user<span class="w"> </span>-u<span class="w"> </span>tokenpak<span class="w"> </span>-n<span class="w"> </span><span class="m">20</span><span class="w"> </span>--no-pager
+</code></pre></div>
+<h3 id="cause-a-log-level-too-high-hiding-useful-messages">Cause A: Log level too high (hiding useful messages)<a class="headerlink" href="#cause-a-log-level-too-high-hiding-useful-messages" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="c1"># Enable debug logging</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_LOG_LEVEL</span><span class="o">=</span>debug
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>
+<a id="__codelineno-34-4" name="__codelineno-34-4" href="#__codelineno-34-4"></a><span class="c1"># Enable compression debug output</span>
+<a id="__codelineno-34-5" name="__codelineno-34-5" href="#__codelineno-34-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_DEBUG_COMPRESSION</span><span class="o">=</span><span class="m">1</span>
+<a id="__codelineno-34-6" name="__codelineno-34-6" href="#__codelineno-34-6"></a>
+<a id="__codelineno-34-7" name="__codelineno-34-7" href="#__codelineno-34-7"></a><span class="c1"># Restart the proxy</span>
+<a id="__codelineno-34-8" name="__codelineno-34-8" href="#__codelineno-34-8"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<p>Log levels (least → most verbose): <code>error</code> → <code>warning</code> → <code>info</code> → <code>debug</code></p>
+<h3 id="cause-b-logs-going-to-wrong-destination">Cause B: Logs going to wrong destination<a class="headerlink" href="#cause-b-logs-going-to-wrong-destination" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="c1"># Run in foreground to see stdout logs</span>
+<a id="__codelineno-35-2" name="__codelineno-35-2" href="#__codelineno-35-2"></a>tokenpak<span class="w"> </span>serve
+<a id="__codelineno-35-3" name="__codelineno-35-3" href="#__codelineno-35-3"></a>
+<a id="__codelineno-35-4" name="__codelineno-35-4" href="#__codelineno-35-4"></a><span class="c1"># If running via systemd, check journal</span>
+<a id="__codelineno-35-5" name="__codelineno-35-5" href="#__codelineno-35-5"></a>journalctl<span class="w"> </span>--user<span class="w"> </span>-u<span class="w"> </span>tokenpak<span class="w"> </span>-f
+<a id="__codelineno-35-6" name="__codelineno-35-6" href="#__codelineno-35-6"></a>
+<a id="__codelineno-35-7" name="__codelineno-35-7" href="#__codelineno-35-7"></a><span class="c1"># If running via Docker</span>
+<a id="__codelineno-35-8" name="__codelineno-35-8" href="#__codelineno-35-8"></a>docker<span class="w"> </span>logs<span class="w"> </span>-f<span class="w"> </span>&lt;container_name&gt;
+</code></pre></div></p>
+<h3 id="cause-c-log-file-permissions">Cause C: Log file permissions<a class="headerlink" href="#cause-c-log-file-permissions" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="c1"># Check log directory permissions</span>
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a>ls<span class="w"> </span>-la<span class="w"> </span>~/.tokenpak/
+<a id="__codelineno-36-3" name="__codelineno-36-3" href="#__codelineno-36-3"></a>
+<a id="__codelineno-36-4" name="__codelineno-36-4" href="#__codelineno-36-4"></a><span class="c1"># Fix permissions</span>
+<a id="__codelineno-36-5" name="__codelineno-36-5" href="#__codelineno-36-5"></a>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>~/.tokenpak
+<a id="__codelineno-36-6" name="__codelineno-36-6" href="#__codelineno-36-6"></a>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>~/.tokenpak/*.log<span class="w"> </span><span class="m">2</span>&gt;/dev/null
+<a id="__codelineno-36-7" name="__codelineno-36-7" href="#__codelineno-36-7"></a>
+<a id="__codelineno-36-8" name="__codelineno-36-8" href="#__codelineno-36-8"></a><span class="c1"># If running as a different user (Docker/systemd)</span>
+<a id="__codelineno-36-9" name="__codelineno-36-9" href="#__codelineno-36-9"></a>chown<span class="w"> </span>-R<span class="w"> </span><span class="k">$(</span>whoami<span class="k">)</span><span class="w"> </span>~/.tokenpak
+</code></pre></div></p>
+<hr />
+<h2 id="11-cache-not-working">11. Cache Not Working<a class="headerlink" href="#11-cache-not-working" title="Permanent link">&para;</a></h2>
+<h3 id="problem_10">Problem<a class="headerlink" href="#problem_10" title="Permanent link">&para;</a></h3>
+<p>Same prompts aren't hitting the cache. Cache hit rate is 0% or unexpectedly low.</p>
+<h3 id="diagnose_10">Diagnose<a class="headerlink" href="#diagnose_10" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="c1"># Check cache stats</span>
+<a id="__codelineno-37-2" name="__codelineno-37-2" href="#__codelineno-37-2"></a>curl<span class="w"> </span>-fsS<span class="w"> </span>http://127.0.0.1:8766/stats<span class="w"> </span><span class="p">|</span><span class="w"> </span>python3<span class="w"> </span>-m<span class="w"> </span>json.tool
+<a id="__codelineno-37-3" name="__codelineno-37-3" href="#__codelineno-37-3"></a>
+<a id="__codelineno-37-4" name="__codelineno-37-4" href="#__codelineno-37-4"></a><span class="c1"># Check cache size setting</span>
+<a id="__codelineno-37-5" name="__codelineno-37-5" href="#__codelineno-37-5"></a><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;Cache size: </span><span class="si">${</span><span class="nv">TOKENPAK_COMPACT_CACHE_SIZE</span><span class="k">:-</span><span class="nv">2000</span><span class="si">}</span><span class="s2"> entries&quot;</span>
+</code></pre></div>
+<h3 id="cause-a-cache-is-disabled">Cause A: Cache is disabled<a class="headerlink" href="#cause-a-cache-is-disabled" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="c1"># Enable compression (which includes caching)</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_COMPACT</span><span class="o">=</span><span class="m">1</span>
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<h3 id="cause-b-prompts-have-varying-metadata">Cause B: Prompts have varying metadata<a class="headerlink" href="#cause-b-prompts-have-varying-metadata" title="Permanent link">&para;</a></h3>
+<p>If each request includes timestamps, random IDs, or other changing data in the prompt, the cache key will differ every time.</p>
+<p><strong>Fix:</strong>
+- Normalize prompts before sending (strip timestamps, request IDs)
+- Move variable data out of the system prompt into user messages
+- Use stable message ordering</p>
+<h3 id="cause-c-cache-evicted-too-quickly-too-small">Cause C: Cache evicted too quickly (too small)<a class="headerlink" href="#cause-c-cache-evicted-too-quickly-too-small" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="c1"># Increase cache size (default: 2000 entries)</span>
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_COMPACT_CACHE_SIZE</span><span class="o">=</span><span class="m">5000</span>
+<a id="__codelineno-39-3" name="__codelineno-39-3" href="#__codelineno-39-3"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<p>See also: <a href="../errors/#tp-e401-cache-error">TP-E401: Cache Error</a></p>
+<hr />
+<h2 id="12-compression-not-reducing-tokens">12. Compression Not Reducing Tokens<a class="headerlink" href="#12-compression-not-reducing-tokens" title="Permanent link">&para;</a></h2>
+<h3 id="problem_11">Problem<a class="headerlink" href="#problem_11" title="Permanent link">&para;</a></h3>
+<p>Token counts show minimal or no reduction even though compression is enabled.</p>
+<h3 id="diagnose_11">Diagnose<a class="headerlink" href="#diagnose_11" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="c1"># Check compression settings</span>
+<a id="__codelineno-40-2" name="__codelineno-40-2" href="#__codelineno-40-2"></a>printenv<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>TOKENPAK_COMPACT
+<a id="__codelineno-40-3" name="__codelineno-40-3" href="#__codelineno-40-3"></a>
+<a id="__codelineno-40-4" name="__codelineno-40-4" href="#__codelineno-40-4"></a><span class="c1"># Run a compression demo to see it in action</span>
+<a id="__codelineno-40-5" name="__codelineno-40-5" href="#__codelineno-40-5"></a>tokenpak<span class="w"> </span>demo
+<a id="__codelineno-40-6" name="__codelineno-40-6" href="#__codelineno-40-6"></a>
+<a id="__codelineno-40-7" name="__codelineno-40-7" href="#__codelineno-40-7"></a><span class="c1"># Check stats endpoint for compression ratios</span>
+<a id="__codelineno-40-8" name="__codelineno-40-8" href="#__codelineno-40-8"></a>curl<span class="w"> </span>-fsS<span class="w"> </span>http://127.0.0.1:8766/stats<span class="w"> </span><span class="p">|</span><span class="w"> </span>python3<span class="w"> </span>-m<span class="w"> </span>json.tool
+</code></pre></div>
+<h3 id="cause-a-input-below-compression-threshold">Cause A: Input below compression threshold<a class="headerlink" href="#cause-a-input-below-compression-threshold" title="Permanent link">&para;</a></h3>
+<p>By default, prompts under 4,500 tokens are not compressed (overhead isn't worth it).</p>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="c1"># Lower the threshold if you want to compress smaller prompts</span>
+<a id="__codelineno-41-2" name="__codelineno-41-2" href="#__codelineno-41-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_COMPACT_THRESHOLD_TOKENS</span><span class="o">=</span><span class="m">1000</span>
+<a id="__codelineno-41-3" name="__codelineno-41-3" href="#__codelineno-41-3"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<h3 id="cause-b-compression-mode-is-too-conservative">Cause B: Compression mode is too conservative<a class="headerlink" href="#cause-b-compression-mode-is-too-conservative" title="Permanent link">&para;</a></h3>
+<p><strong>Fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="c1"># Try a more aggressive mode</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a><span class="c1"># Modes: strict (safest) → hybrid (default) → aggressive (maximum savings)</span>
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_MODE</span><span class="o">=</span>aggressive
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a>tokenpak<span class="w"> </span>serve
+</code></pre></div></p>
+<h3 id="cause-c-content-isnt-compressible">Cause C: Content isn't compressible<a class="headerlink" href="#cause-c-content-isnt-compressible" title="Permanent link">&para;</a></h3>
+<p>Some prompts (short, unique, no repetition) don't compress well. This is expected.</p>
+<p><strong>Fix:</strong>
+- TokenPak works best on prompts with repeated context, system prompts, or structured data
+- Check <code>tokenpak demo --list</code> to see which compression recipes are available
+- Use <code>tokenpak demo --file &lt;path&gt;</code> to see which recipes match your content</p>
+<hr />
+<h2 id="getting-more-help">Getting More Help<a class="headerlink" href="#getting-more-help" title="Permanent link">&para;</a></h2>
+<h3 id="1-search-existing-issues">1. Search existing issues<a class="headerlink" href="#1-search-existing-issues" title="Permanent link">&para;</a></h3>
+<p>Check if someone has already reported your problem:
+https://github.com/kaywhy331/tokenpak/issues</p>
+<h3 id="2-file-a-bug-report">2. File a bug report<a class="headerlink" href="#2-file-a-bug-report" title="Permanent link">&para;</a></h3>
+<p>Include the following in your report:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="gs">**Environment:**</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="k">-</span><span class="w"> </span>TokenPak version: <span class="sb">`tokenpak --version`</span>
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a><span class="k">-</span><span class="w"> </span>Python version: <span class="sb">`python3 --version`</span>
+<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a><span class="k">-</span><span class="w"> </span>OS: <span class="sb">`uname -a`</span>
+<a id="__codelineno-43-5" name="__codelineno-43-5" href="#__codelineno-43-5"></a><span class="k">-</span><span class="w"> </span>Install method: pip / Docker / source
+<a id="__codelineno-43-6" name="__codelineno-43-6" href="#__codelineno-43-6"></a>
+<a id="__codelineno-43-7" name="__codelineno-43-7" href="#__codelineno-43-7"></a><span class="gs">**Steps to reproduce:**</span>
+<a id="__codelineno-43-8" name="__codelineno-43-8" href="#__codelineno-43-8"></a><span class="k">1.</span> ...
+<a id="__codelineno-43-9" name="__codelineno-43-9" href="#__codelineno-43-9"></a><span class="k">2.</span> ...
+<a id="__codelineno-43-10" name="__codelineno-43-10" href="#__codelineno-43-10"></a>
+<a id="__codelineno-43-11" name="__codelineno-43-11" href="#__codelineno-43-11"></a><span class="gs">**Expected behavior:**</span>
+<a id="__codelineno-43-12" name="__codelineno-43-12" href="#__codelineno-43-12"></a>...
+<a id="__codelineno-43-13" name="__codelineno-43-13" href="#__codelineno-43-13"></a>
+<a id="__codelineno-43-14" name="__codelineno-43-14" href="#__codelineno-43-14"></a><span class="gs">**Actual behavior:**</span>
+<a id="__codelineno-43-15" name="__codelineno-43-15" href="#__codelineno-43-15"></a>...
+<a id="__codelineno-43-16" name="__codelineno-43-16" href="#__codelineno-43-16"></a>
+<a id="__codelineno-43-17" name="__codelineno-43-17" href="#__codelineno-43-17"></a><span class="gs">**Logs:**</span>
+<a id="__codelineno-43-18" name="__codelineno-43-18" href="#__codelineno-43-18"></a>&lt;paste relevant log output&gt;
+<a id="__codelineno-43-19" name="__codelineno-43-19" href="#__codelineno-43-19"></a>
+<a id="__codelineno-43-20" name="__codelineno-43-20" href="#__codelineno-43-20"></a><span class="gs">**Config (redact API keys!):**</span>
+<a id="__codelineno-43-21" name="__codelineno-43-21" href="#__codelineno-43-21"></a>&lt;paste sanitized config&gt;
+</code></pre></div>
+<p>File at: https://github.com/kaywhy331/tokenpak/issues/new</p>
+<h3 id="3-error-codes-reference">3. Error codes reference<a class="headerlink" href="#3-error-codes-reference" title="Permanent link">&para;</a></h3>
+<p>For detailed error code descriptions and fixes, see <a href="../errors/">Error Codes Reference</a>.</p>
+<h3 id="4-community">4. Community<a class="headerlink" href="#4-community" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>GitHub Discussions:</strong> https://github.com/kaywhy331/tokenpak/discussions</li>
+<li><strong>Documentation:</strong> See <a href="../INDEX/">docs/INDEX.md</a> for the full documentation index</li>
+</ul>
 
 
 
@@ -3284,6 +2646,8 @@ tokenpak<span class="w"> </span>serve<span class="w">  </span><span class="c1">#
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -3300,10 +2664,6 @@ tokenpak<span class="w"> </span>serve<span class="w">  </span><span class="c1">#
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      Copyright &copy; 2026 TokenPak Contributors
-    </div>
   
   
     Made with
@@ -3327,6 +2687,17 @@ tokenpak<span class="w"> </span>serve<span class="w">  </span><span class="c1">#
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://pypi.org/project/tokenpak/" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+    </a>
+  
 </div>
       
     </div>
@@ -3342,7 +2713,7 @@ tokenpak<span class="w"> </span>serve<span class="w">  </span><span class="c1">#
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

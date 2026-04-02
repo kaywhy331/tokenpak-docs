@@ -6,28 +6,26 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-      
-        <meta name="author" content="TokenPak Contributors">
-      
-      
-        <link rel="canonical" href="https://docs.tokenpak.ai/API/">
+        <meta name="description" content="Zero-token operations. Maximum context efficiency.">
       
       
-        <link rel="prev" href="../COMPONENT-DIAGRAM/">
+        <meta name="author" content="TokenPak Team">
       
       
-        <link rel="next" href="../api-reference/">
+        <link rel="canonical" href="https://docs.tokenpak.dev/API/">
+      
+      
       
       
         
       
       
-      <link rel="icon" href="../assets/favicon.ico">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
-        <title>API Reference - TokenPak</title>
+        <title>TokenPak Public API Reference - TokenPak</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tokenpak-api-reference" class="md-skip">
+        <a href="#tokenpak-public-api-reference" class="md-skip">
           Skip to content
         </a>
       
@@ -90,11 +88,14 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="TokenPak" class="md-header__button md-logo" aria-label="TokenPak" data-md-component="logo">
       
-  <img src="../assets/logo.svg" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              API Reference
+              TokenPak Public API Reference
             
           </span>
         </div>
@@ -196,7 +197,7 @@
         <a href="https://github.com/tokenpak/tokenpak" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     tokenpak/tokenpak
@@ -206,14 +207,8 @@
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
@@ -242,18 +237,17 @@
   
   
   
-    
-    
-      <li class="md-tabs__item">
-        <a href="../installation/" class="md-tabs__link">
-          
+    <li class="md-tabs__item">
+      <a href="../getting-started/" class="md-tabs__link">
+        
   
+  
+    
   
   Getting Started
 
-        </a>
-      </li>
-    
+      </a>
+    </li>
   
 
       
@@ -265,11 +259,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../configuration/" class="md-tabs__link">
+        <a href="../guides/proxy-setup/" class="md-tabs__link">
           
   
   
-  User Guide
+  Guides
 
         </a>
       </li>
@@ -281,21 +275,56 @@
   
   
   
-    
+  
+    <li class="md-tabs__item">
+      <a href="../cli-reference/" class="md-tabs__link">
+        
   
   
     
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../architecture/" class="md-tabs__link">
-          
   
-  
-  Architecture
+  CLI Reference
 
-        </a>
-      </li>
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../api-reference/" class="md-tabs__link">
+        
+  
+  
     
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
   
 
       
@@ -307,51 +336,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../adapters/openai-compat/" class="md-tabs__link">
+        <a href="../compression/" class="md-tabs__link">
           
   
   
-  Adapters
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../observability/" class="md-tabs__link">
-          
-  
-  
-  Advanced
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../recipes/01-multi-provider-fallback/" class="md-tabs__link">
-          
-  
-  
-  Recipes
+  Deep Dives
 
         </a>
       </li>
@@ -367,11 +356,11 @@
     
     
       <li class="md-tabs__item">
-        <a href="../FAQ/" class="md-tabs__link">
+        <a href="../blog/zero-data-architecture/" class="md-tabs__link">
           
   
   
-  Support
+  Blog
 
         </a>
       </li>
@@ -382,7 +371,13 @@
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -403,7 +398,8 @@
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="TokenPak" class="md-nav__button md-logo" aria-label="TokenPak" data-md-component="logo">
       
-  <img src="../assets/logo.svg" alt="logo">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
     TokenPak
@@ -413,7 +409,7 @@
       <a href="https://github.com/tokenpak/tokenpak" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
     tokenpak/tokenpak
@@ -456,6 +452,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -470,17 +493,19 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
     
   
-    Getting Started
+    Guides
   
 
     
@@ -491,12 +516,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
-    Getting Started
+    Guides
   
 
           </label>
@@ -509,14 +534,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../guides/proxy-setup/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Installation
+    Proxy Setup
   
 
     
@@ -537,14 +562,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../QUICKSTART/" class="md-nav__link">
+      <a href="../guides/recipes/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Quick Start
+    Recipe Development
   
 
     
@@ -565,14 +590,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../comparison/" class="md-nav__link">
+      <a href="../guides/telemetry/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Comparison
+    Telemetry & Dashboard
   
 
     
@@ -593,42 +618,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../COMPATIBILITY/" class="md-nav__link">
+      <a href="../guides/team-server/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Compatibility
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../demo/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Demo Data
+    Team Server
   
 
     
@@ -655,116 +652,8 @@
   
   
   
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    User Guide
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    User Guide
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../configuration/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Configuration
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../env-vars/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Environment Variables
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adapters/" class="md-nav__link">
+      <a href="../cli-reference/" class="md-nav__link">
         
   
   
@@ -783,600 +672,9 @@
     </li>
   
 
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../error-handling/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Error Handling
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../troubleshooting/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Troubleshooting
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../DOCKER/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Docker Deployment
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../SAVINGS/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Savings
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../SECURITY/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Security
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
       
       
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architecture
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Architecture
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../COMPONENT-DIAGRAM/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Component Diagram
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    API Reference
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    API Reference
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#quick-navigation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Quick Navigation
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#core-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Classes
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Core Classes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#heuristicengine" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        HeuristicEngine
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#completiontracker" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CompletionTracker
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cachemanager" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CacheManager
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#requestvalidator" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        RequestValidator
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adapters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Adapters
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Adapters">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#base-adapter-pattern" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Base Adapter Pattern
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#anthropicadapter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AnthropicAdapter
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#openaiadapter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        OpenAIAdapter
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#langchainadapter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        LangChainAdapter
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#litellmadapter" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        LiteLLMAdapter
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exceptions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Exceptions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Exceptions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokenpakadaptererror" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TokenPakAdapterError
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Common Patterns
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Patterns">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pattern-track-costs-per-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pattern: Track Costs Per Request
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pattern-compress-before-sending" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pattern: Compress Before Sending
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pattern-validate-request-before-sending" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pattern: Validate Request Before Sending
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#type-hints" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Type Hints
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#module-organization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Module Organization
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-help" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting Help
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
   
   
   
@@ -1389,7 +687,7 @@
   <span class="md-ellipsis">
     
   
-    API Reference (Extended)
+    API Reference
   
 
     
@@ -1401,934 +699,15 @@
     </li>
   
 
-              
-            
-              
-                
+    
+      
+      
   
   
   
   
     <li class="md-nav__item">
-      <a href="../features/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Features
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../plugin-guide/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Plugin Guide
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../plugin-system-architecture/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Plugin System Architecture
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../OSS-PRO-BOUNDARY/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OSS / PRO Boundary
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../assets/DIAGRAMS/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Architecture Diagrams
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Adapters
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Adapters
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adapters/openai-compat/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    OpenAI-Compatible
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adapters/litellm/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LiteLLM
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adapters/langchain/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    LangChain
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../adapters/google/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Google
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Advanced
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Advanced
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../observability/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Observability
-  
-
-    
-  </span>
-  
-  
-    
-  
-  
-    <span class="md-status md-status--active"></span>
-  
-
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../production-sla/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Production SLA
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../performance/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Performance Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../PERFORMANCE/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Performance Benchmarks
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../COMPRESSION_TUNING/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Compression Tuning
-  
-
-    
-      <br>
-      <small>Optimize token savings vs latency tradeoffs for your use case</small>
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../LATENCY/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Latency Analysis
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../performance/memory-analysis/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Memory Analysis
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../TESTING/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Testing
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
-        
-          
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Recipes
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Recipes
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/01-multi-provider-fallback/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Multi-Provider Fallback
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/02-budget-caps/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Budget Caps
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/03-per-user-rate-limiting/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Per-User Rate Limiting
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/04-model-routing-by-use-case/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Model Routing by Use Case
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/05-cost-monitoring/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Cost Monitoring
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/06-streaming-responses/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Streaming Responses
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../recipes/07-local-development-mock/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Local Development Mock
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
-        
-          
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Support
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Support
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../FAQ/" class="md-nav__link">
+      <a href="../faq/" class="md-nav__link">
         
   
   
@@ -2347,7 +726,60 @@
     </li>
   
 
-              
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Dives
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deep Dives
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -2356,14 +788,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../EXAMPLES/" class="md-nav__link">
+      <a href="../compression/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Examples
+    Compression
   
 
     
@@ -2384,14 +816,159 @@
   
   
     <li class="md-nav__item">
-      <a href="../release-checklist/" class="md-nav__link">
+      <a href="../cache/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Release Checklist
+    Caching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telemetry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telemetry & Privacy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/zero-data-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why Zero Data Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/save-35-percent-tokens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Save 35% on LLM Tokens
   
 
     
@@ -2439,10 +1016,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#quick-navigation" class="md-nav__link">
+  <a href="#quick-start" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quick Navigation
+        Quick Start
       
     </span>
   </a>
@@ -2450,22 +1027,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#core-classes" class="md-nav__link">
+  <a href="#top-level-imports" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core Classes
+        Top-Level Imports
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Core Classes">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Classes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#heuristicengine" class="md-nav__link">
+  <a href="#telemetrycollector" class="md-nav__link">
     <span class="md-ellipsis">
       
-        HeuristicEngine
+        TelemetryCollector
       
     </span>
   </a>
@@ -2495,10 +1083,87 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#requestvalidator" class="md-nav__link">
+  <a href="#compressionengine" class="md-nav__link">
     <span class="md-ellipsis">
       
-        RequestValidator
+        CompressionEngine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#heuristicengine" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HeuristicEngine
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#get_enginename" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        get_engine(name)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#block" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Block
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blockregistry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BlockRegistry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budgeter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Budgeter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#budgetblock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BudgetBlock
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        main()
       
     </span>
   </a>
@@ -2511,22 +1176,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#adapters" class="md-nav__link">
+  <a href="#sub-packages" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Adapters
+        Sub-Packages
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Adapters">
+    <nav class="md-nav" aria-label="Sub-Packages">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#base-adapter-pattern" class="md-nav__link">
+  <a href="#tokenpaktelemetry" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Base Adapter Pattern
+        tokenpak.telemetry
       
     </span>
   </a>
@@ -2534,10 +1199,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#anthropicadapter" class="md-nav__link">
+  <a href="#tokenpakengines" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AnthropicAdapter
+        tokenpak.engines
       
     </span>
   </a>
@@ -2545,10 +1210,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#openaiadapter" class="md-nav__link">
+  <a href="#tokenpakregistry" class="md-nav__link">
     <span class="md-ellipsis">
       
-        OpenAIAdapter
+        tokenpak.registry
       
     </span>
   </a>
@@ -2556,10 +1221,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#langchainadapter" class="md-nav__link">
+  <a href="#tokenpakconnectors" class="md-nav__link">
     <span class="md-ellipsis">
       
-        LangChainAdapter
+        tokenpak.connectors
       
     </span>
   </a>
@@ -2567,10 +1232,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#litellmadapter" class="md-nav__link">
+  <a href="#tokenpakagent" class="md-nav__link">
     <span class="md-ellipsis">
       
-        LiteLLMAdapter
+        tokenpak.agent
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tokenpakproxy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        tokenpak.proxy
       
     </span>
   </a>
@@ -2583,88 +1259,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#exceptions" class="md-nav__link">
+  <a href="#version-history" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Exceptions
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Exceptions">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#tokenpakadaptererror" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        TokenPakAdapterError
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#common-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Common Patterns
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Patterns">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pattern-track-costs-per-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pattern: Track Costs Per Request
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pattern-compress-before-sending" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pattern: Compress Before Sending
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pattern-validate-request-before-sending" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Pattern: Validate Request Before Sending
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#type-hints" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Type Hints
+        Version History
       
     </span>
   </a>
@@ -2672,21 +1270,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#module-organization" class="md-nav__link">
+  <a href="#integration-example" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Module Organization
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#getting-help" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Getting Help
+        Integration Example
       
     </span>
   </a>
@@ -2704,6 +1291,14 @@
           
             <div class="md-content" data-md-component="content">
               
+                
+
+
+
+  
+
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2713,374 +1308,356 @@
   
 
 
-<h1 id="tokenpak-api-reference">TokenPak API Reference<a class="headerlink" href="#tokenpak-api-reference" title="Permanent link">&para;</a></h1>
-<p><strong>Complete reference for TokenPak SDK classes, adapters, and utilities.</strong></p>
+<h1 id="tokenpak-public-api-reference">TokenPak Public API Reference<a class="headerlink" href="#tokenpak-public-api-reference" title="Permanent link">&para;</a></h1>
+<p><strong>Version:</strong> 0.1.0<br />
+<strong>Author:</strong> Kevin Yang<br />
+<strong>License:</strong> MIT</p>
+<p>TokenPak is a deterministic compression and telemetry package for multi-agent AI workflows. This document describes the full public API surface.</p>
 <hr />
-<h2 id="quick-navigation">Quick Navigation<a class="headerlink" href="#quick-navigation" title="Permanent link">&para;</a></h2>
+<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">TelemetryCollector</span><span class="p">,</span> <span class="n">CacheManager</span><span class="p">,</span> <span class="n">CompressionEngine</span><span class="p">,</span> <span class="n">Budgeter</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Collect telemetry</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">collector</span> <span class="o">=</span> <span class="n">TelemetryCollector</span><span class="p">()</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># Manage cache</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">cache</span> <span class="o">=</span> <span class="n">CacheManager</span><span class="p">()</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># Compress content</span>
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">engine</span> <span class="o">=</span> <span class="n">CompressionEngine</span><span class="p">()</span>  <span class="c1"># Abstract base; use HeuristicEngine for concrete implementation</span>
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1"># Budget tokens</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="n">budgeter</span> <span class="o">=</span> <span class="n">Budgeter</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h2 id="top-level-imports">Top-Level Imports<a class="headerlink" href="#top-level-imports" title="Permanent link">&para;</a></h2>
+<p>All public classes are importable directly from <code>tokenpak</code>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    <span class="n">TelemetryCollector</span><span class="p">,</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="n">CompletionTracker</span><span class="p">,</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="n">CacheManager</span><span class="p">,</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="n">CompressionEngine</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    <span class="n">HeuristicEngine</span><span class="p">,</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    <span class="n">get_engine</span><span class="p">,</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    <span class="n">Block</span><span class="p">,</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    <span class="n">BlockRegistry</span><span class="p">,</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    <span class="n">Budgeter</span><span class="p">,</span>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>    <span class="n">BudgetBlock</span><span class="p">,</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>    <span class="n">main</span><span class="p">,</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    <span class="c1"># Sub-packages</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>    <span class="n">connectors</span><span class="p">,</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    <span class="n">agent</span><span class="p">,</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>    <span class="n">proxy</span><span class="p">,</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h2 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h2>
+<h3 id="telemetrycollector"><code>TelemetryCollector</code><a class="headerlink" href="#telemetrycollector" title="Permanent link">&para;</a></h3>
+<p><strong>Import:</strong> <code>from tokenpak import TelemetryCollector</code><br />
+<strong>Source:</strong> <code>tokenpak.telemetry.collector</code></p>
+<p>Monitors file system paths and collects telemetry events — cache hits, token counts, cost events.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">TelemetryCollector</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">collector</span> <span class="o">=</span> <span class="n">TelemetryCollector</span><span class="p">()</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Watch a directory for events</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">collector</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h3 id="completiontracker"><code>CompletionTracker</code><a class="headerlink" href="#completiontracker" title="Permanent link">&para;</a></h3>
+<p><strong>Import:</strong> <code>from tokenpak import CompletionTracker</code><br />
+<strong>Source:</strong> <code>tokenpak.agent.telemetry.cost_tracker.CostTracker</code> (aliased)</p>
+<p>Tracks per-completion cost, model usage, and latency. Accumulates stats across multiple calls.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">CompletionTracker</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">tracker</span> <span class="o">=</span> <span class="n">CompletionTracker</span><span class="p">()</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">tracker</span><span class="o">.</span><span class="n">record</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;claude-3-5-sonnet&quot;</span><span class="p">,</span> <span class="n">tokens_in</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span> <span class="n">tokens_out</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">cost_usd</span><span class="o">=</span><span class="mf">0.015</span><span class="p">)</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">stats</span> <span class="o">=</span> <span class="n">tracker</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h3 id="cachemanager"><code>CacheManager</code><a class="headerlink" href="#cachemanager" title="Permanent link">&para;</a></h3>
+<p><strong>Import:</strong> <code>from tokenpak import CacheManager</code><br />
+<strong>Source:</strong> <code>tokenpak.telemetry.cache.CacheStore</code> (aliased)</p>
+<p>Manages in-process cache storage with hit-rate tracking. Used by the proxy pipeline.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">CacheManager</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">cache</span> <span class="o">=</span> <span class="n">CacheManager</span><span class="p">()</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">cache</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;key&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="s2">&quot;data&quot;</span><span class="p">})</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">hit</span> <span class="o">=</span> <span class="n">cache</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;key&quot;</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h3 id="compressionengine"><code>CompressionEngine</code><a class="headerlink" href="#compressionengine" title="Permanent link">&para;</a></h3>
+<p><strong>Import:</strong> <code>from tokenpak import CompressionEngine</code><br />
+<strong>Source:</strong> <code>tokenpak.engines.base.CompactionEngine</code> (aliased)</p>
+<p>Abstract base class for all compression/compaction strategies. Subclass to implement custom engines.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">CompressionEngine</span><span class="p">,</span> <span class="n">HeuristicEngine</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="c1"># Use the concrete heuristic engine</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="n">engine</span> <span class="o">=</span> <span class="n">HeuristicEngine</span><span class="p">()</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">compressed</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">compress</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h3 id="heuristicengine"><code>HeuristicEngine</code><a class="headerlink" href="#heuristicengine" title="Permanent link">&para;</a></h3>
+<p><strong>Import:</strong> <code>from tokenpak import HeuristicEngine</code><br />
+<strong>Source:</strong> <code>tokenpak.engines.heuristic</code></p>
+<p>Default production compression engine. Rule-based, fast, no external dependencies.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">HeuristicEngine</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">engine</span> <span class="o">=</span> <span class="n">HeuristicEngine</span><span class="p">()</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="n">result</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">compress</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">max_tokens</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h3 id="get_enginename"><code>get_engine(name)</code><a class="headerlink" href="#get_enginename" title="Permanent link">&para;</a></h3>
+<p><strong>Import:</strong> <code>from tokenpak import get_engine</code><br />
+<strong>Source:</strong> <code>tokenpak.engines</code></p>
+<p>Factory function. Returns a compression engine by name.</p>
 <table>
 <thead>
 <tr>
-<th>Use Case</th>
-<th>Class</th>
-<th>Import</th>
+<th>Name</th>
+<th>Engine</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Compress context</td>
-<td><code>HeuristicEngine</code></td>
-<td><code>from tokenpak import HeuristicEngine</code></td>
+<td><code>"heuristic"</code></td>
+<td>HeuristicEngine</td>
+<td>Default, always available</td>
 </tr>
 <tr>
-<td>Track token counts</td>
-<td><code>CompletionTracker</code></td>
-<td><code>from tokenpak import CompletionTracker</code></td>
+<td><code>"fast"</code></td>
+<td>HeuristicEngine</td>
+<td>Alias for heuristic</td>
 </tr>
 <tr>
-<td>Manage cache</td>
-<td><code>CacheManager</code></td>
-<td><code>from tokenpak import CacheManager</code></td>
+<td><code>"balanced"</code></td>
+<td>LLMLinguaEngine</td>
+<td>Requires LLMLingua install</td>
 </tr>
 <tr>
-<td>Validate requests</td>
-<td><code>RequestValidator</code></td>
-<td><code>from tokenpak.validation import RequestValidator</code></td>
+<td><code>"llmlingua"</code></td>
+<td>LLMLinguaEngine</td>
+<td>Requires LLMLingua install</td>
 </tr>
+</tbody>
+</table>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_engine</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">engine</span> <span class="o">=</span> <span class="n">get_engine</span><span class="p">(</span><span class="s2">&quot;heuristic&quot;</span><span class="p">)</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="n">compressed</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">compress</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h3 id="block"><code>Block</code><a class="headerlink" href="#block" title="Permanent link">&para;</a></h3>
+<p><strong>Import:</strong> <code>from tokenpak import Block</code><br />
+<strong>Source:</strong> <code>tokenpak.registry</code></p>
+<p>Dataclass representing a processed content block with compression metadata.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">Block</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">block</span> <span class="o">=</span> <span class="n">Block</span><span class="p">(</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="n">path</span><span class="o">=</span><span class="s2">&quot;docs/README.md&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>    <span class="n">content_hash</span><span class="o">=</span><span class="s2">&quot;abc123&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>    <span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>    <span class="n">file_type</span><span class="o">=</span><span class="s2">&quot;md&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>    <span class="n">raw_tokens</span><span class="o">=</span><span class="mi">1500</span><span class="p">,</span>
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>    <span class="n">compressed_tokens</span><span class="o">=</span><span class="mi">450</span><span class="p">,</span>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    <span class="n">compressed_content</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>    <span class="n">quality_score</span><span class="o">=</span><span class="mf">0.95</span><span class="p">,</span>
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    <span class="n">importance</span><span class="o">=</span><span class="mf">7.5</span><span class="p">,</span>
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a><span class="p">)</span>
+</code></pre></div>
+<p><strong>Fields:</strong>
+| Field               | Type    | Description                        |
+|---------------------|---------|------------------------------------|
+| <code>path</code>              | str     | Source file path                   |
+| <code>content_hash</code>      | str     | SHA-256 of original content        |
+| <code>version</code>           | int     | Block version number               |
+| <code>file_type</code>         | str     | File type (md, py, json, etc.)     |
+| <code>raw_tokens</code>        | int     | Token count before compression     |
+| <code>compressed_tokens</code> | int     | Token count after compression      |
+| <code>compressed_content</code>| str     | Compressed content string          |
+| <code>quality_score</code>     | float   | Compression quality (0.0–1.0)      |
+| <code>importance</code>        | float   | Relevance score (0.0–10.0)         |
+| <code>processed_at</code>      | float   | Unix timestamp                     |
+| <code>slice_id</code>          | str     | Optional slice identifier          |
+| <code>provenance</code>        | object  | Optional source provenance info    |</p>
+<hr />
+<h3 id="blockregistry"><code>BlockRegistry</code><a class="headerlink" href="#blockregistry" title="Permanent link">&para;</a></h3>
+<p><strong>Import:</strong> <code>from tokenpak import BlockRegistry</code><br />
+<strong>Source:</strong> <code>tokenpak.registry</code></p>
+<p>SQLite-backed content registry with search, versioning, and stats.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">BlockRegistry</span><span class="p">,</span> <span class="n">Block</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">registry</span> <span class="o">=</span> <span class="n">BlockRegistry</span><span class="p">(</span><span class="s2">&quot;tokenpak.db&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">registry</span><span class="o">.</span><span class="n">add_block</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a><span class="c1"># Search</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="n">results</span> <span class="o">=</span> <span class="n">registry</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;token compression&quot;</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="c1"># Stats</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="n">stats</span> <span class="o">=</span> <span class="n">registry</span><span class="o">.</span><span class="n">get_stats</span><span class="p">()</span>
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="c1"># {&#39;total_files&#39;: 42, &#39;total_tokens&#39;: 85000, ...}</span>
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a><span class="n">registry</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</code></pre></div>
+<hr />
+<h3 id="budgeter"><code>Budgeter</code><a class="headerlink" href="#budgeter" title="Permanent link">&para;</a></h3>
+<p><strong>Import:</strong> <code>from tokenpak import Budgeter</code><br />
+<strong>Source:</strong> <code>tokenpak.budgeter</code></p>
+<p>Enforces token budgets across context buckets (state, recent, evidence, tools). Trims lower-priority content first.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">Budgeter</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">budgeter</span> <span class="o">=</span> <span class="n">Budgeter</span><span class="p">()</span>  <span class="c1"># Loads budget_config.yaml if available</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="n">components</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="s1">&#39;state&#39;</span><span class="p">:</span>    <span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="n">state_json</span><span class="p">,</span> <span class="s1">&#39;priority&#39;</span><span class="p">:</span> <span class="s1">&#39;critical&#39;</span><span class="p">},</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="s1">&#39;recent&#39;</span><span class="p">:</span>   <span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="n">recent_turns</span><span class="p">,</span> <span class="s1">&#39;priority&#39;</span><span class="p">:</span> <span class="s1">&#39;high&#39;</span><span class="p">},</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    <span class="s1">&#39;evidence&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;items&#39;</span><span class="p">:</span> <span class="n">evidence_list</span><span class="p">,</span> <span class="s1">&#39;priority&#39;</span><span class="p">:</span> <span class="s1">&#39;medium&#39;</span><span class="p">},</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>    <span class="s1">&#39;tools&#39;</span><span class="p">:</span>    <span class="p">{</span><span class="s1">&#39;text&#39;</span><span class="p">:</span> <span class="n">tool_schemas</span><span class="p">,</span> <span class="s1">&#39;priority&#39;</span><span class="p">:</span> <span class="s1">&#39;variable&#39;</span><span class="p">},</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="p">}</span>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="n">trimmed</span> <span class="o">=</span> <span class="n">budgeter</span><span class="o">.</span><span class="n">allocate</span><span class="p">(</span><span class="n">components</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Default budget allocations:</strong>
+| Bucket    | Range   | Priority  |
+|-----------|---------|-----------|
+| STATE_JSON | 8–15%  | critical  |
+| RECENT    | 10–20%  | high      |
+| EVIDENCE  | 50–70%  | medium    |
+| TOOLS     | 0–25%   | variable  |</p>
+<hr />
+<h3 id="budgetblock"><code>BudgetBlock</code><a class="headerlink" href="#budgetblock" title="Permanent link">&para;</a></h3>
+<p><strong>Import:</strong> <code>from tokenpak import BudgetBlock</code><br />
+<strong>Source:</strong> <code>tokenpak.budget</code></p>
+<p>Lightweight block reference used for quadratic token allocation.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">BudgetBlock</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.budget</span><span class="w"> </span><span class="kn">import</span> <span class="n">quadratic_allocate</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="n">blocks</span> <span class="o">=</span> <span class="p">[</span><span class="n">BudgetBlock</span><span class="p">(</span><span class="n">ref</span><span class="o">=</span><span class="s2">&quot;docs/a.md#v1&quot;</span><span class="p">),</span> <span class="n">BudgetBlock</span><span class="p">(</span><span class="n">ref</span><span class="o">=</span><span class="s2">&quot;docs/b.md#v1&quot;</span><span class="p">)]</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="n">allocation</span> <span class="o">=</span> <span class="n">quadratic_allocate</span><span class="p">(</span><span class="n">blocks</span><span class="p">,</span> <span class="n">total_tokens</span><span class="o">=</span><span class="mi">4000</span><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h3 id="main"><code>main()</code><a class="headerlink" href="#main" title="Permanent link">&para;</a></h3>
+<p><strong>Import:</strong> <code>from tokenpak import main</code><br />
+<strong>Source:</strong> <code>tokenpak.cli</code></p>
+<p>CLI entry point. Equivalent to running <code>tokenpak</code> from the command line.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">main</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="n">main</span><span class="p">()</span>  <span class="c1"># Runs the CLI</span>
+</code></pre></div>
+<p><strong>CLI usage:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>tokenpak<span class="w"> </span>--help
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>tokenpak<span class="w"> </span>index<span class="w"> </span>&lt;path&gt;
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>tokenpak<span class="w"> </span>search<span class="w"> </span>&lt;query&gt;
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>tokenpak<span class="w"> </span>stats
+<a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>tokenpak<span class="w"> </span>serve
+<a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>tokenpak<span class="w"> </span>cost
+<a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>tokenpak<span class="w"> </span>budget
+</code></pre></div></p>
+<hr />
+<h2 id="sub-packages">Sub-Packages<a class="headerlink" href="#sub-packages" title="Permanent link">&para;</a></h2>
+<h3 id="tokenpaktelemetry"><code>tokenpak.telemetry</code><a class="headerlink" href="#tokenpaktelemetry" title="Permanent link">&para;</a></h3>
+<p>Canonical telemetry types, adapters, and collector.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.telemetry</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>    <span class="n">TelemetryCollector</span><span class="p">,</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>    <span class="n">CompletionTracker</span><span class="p">,</span>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="n">CacheManager</span><span class="p">,</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    <span class="n">CanonicalRequest</span><span class="p">,</span>
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>    <span class="n">CanonicalResponse</span><span class="p">,</span>
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a>    <span class="n">CanonicalUsage</span><span class="p">,</span>
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a>    <span class="n">UsageSource</span><span class="p">,</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a>    <span class="n">Confidence</span><span class="p">,</span>
+<a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a>    <span class="n">AdapterRegistry</span><span class="p">,</span>
+<a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="p">)</span>
+</code></pre></div>
+<hr />
+<h3 id="tokenpakengines"><code>tokenpak.engines</code><a class="headerlink" href="#tokenpakengines" title="Permanent link">&para;</a></h3>
+<p>Compression/compaction engines.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.engines</span><span class="w"> </span><span class="kn">import</span> <span class="n">CompactionEngine</span><span class="p">,</span> <span class="n">HeuristicEngine</span><span class="p">,</span> <span class="n">get_engine</span>
+</code></pre></div>
+<hr />
+<h3 id="tokenpakregistry"><code>tokenpak.registry</code><a class="headerlink" href="#tokenpakregistry" title="Permanent link">&para;</a></h3>
+<p>Block storage and retrieval.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.registry</span><span class="w"> </span><span class="kn">import</span> <span class="n">Block</span><span class="p">,</span> <span class="n">BlockRegistry</span>
+</code></pre></div>
+<hr />
+<h3 id="tokenpakconnectors"><code>tokenpak.connectors</code><a class="headerlink" href="#tokenpakconnectors" title="Permanent link">&para;</a></h3>
+<p>Source connectors (file system, GitHub, etc.)</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">connectors</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="c1"># or</span>
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.connectors</span><span class="w"> </span><span class="kn">import</span> <span class="o">...</span>
+</code></pre></div>
+<hr />
+<h3 id="tokenpakagent"><code>tokenpak.agent</code><a class="headerlink" href="#tokenpakagent" title="Permanent link">&para;</a></h3>
+<p>Agent orchestration and vault integration.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">agent</span>
+</code></pre></div>
+<hr />
+<h3 id="tokenpakproxy"><code>tokenpak.proxy</code><a class="headerlink" href="#tokenpakproxy" title="Permanent link">&para;</a></h3>
+<p>Proxy utilities and credential passthrough.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">proxy</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.proxy</span><span class="w"> </span><span class="kn">import</span> <span class="n">CredentialPassthrough</span>
+</code></pre></div>
+<hr />
+<h2 id="version-history">Version History<a class="headerlink" href="#version-history" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
 <tr>
-<td>Anthropic SDK</td>
-<td><code>AnthropicAdapter</code></td>
-<td><code>from tokenpak.adapters import AnthropicAdapter</code></td>
+<th>Version</th>
+<th>Notes</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td>OpenAI SDK</td>
-<td><code>OpenAIAdapter</code></td>
-<td><code>from tokenpak.adapters import OpenAIAdapter</code></td>
-</tr>
-<tr>
-<td>LangChain</td>
-<td><code>LangChainAdapter</code></td>
-<td><code>from tokenpak.adapters import LangChainAdapter</code></td>
-</tr>
-<tr>
-<td>LiteLLM</td>
-<td><code>LiteLLMAdapter</code></td>
-<td><code>from tokenpak.adapters import LiteLLMAdapter</code></td>
+<td>0.1.0</td>
+<td>Initial public API surface — all imports wired</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="core-classes">Core Classes<a class="headerlink" href="#core-classes" title="Permanent link">&para;</a></h2>
-<h3 id="heuristicengine">HeuristicEngine<a class="headerlink" href="#heuristicengine" title="Permanent link">&para;</a></h3>
-<p>Fast, rule-based compression engine. No external dependencies.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">HeuristicEngine</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.engines.base</span><span class="w"> </span><span class="kn">import</span> <span class="n">CompactionHints</span>
-
-<span class="n">engine</span> <span class="o">=</span> <span class="n">HeuristicEngine</span><span class="p">()</span>
-
-<span class="c1"># Basic compression</span>
-<span class="n">compressed</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">compact</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-
-<span class="c1"># With target budget</span>
-<span class="n">hints</span> <span class="o">=</span> <span class="n">CompactionHints</span><span class="p">(</span><span class="n">target_tokens</span><span class="o">=</span><span class="mi">2048</span><span class="p">)</span>
-<span class="n">compressed</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">compact</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">hints</span><span class="p">)</span>
-
-<span class="c1"># Get compression stats</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">compress_with_stats</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Reduction: </span><span class="si">{</span><span class="n">result</span><span class="p">[</span><span class="s1">&#39;compression_ratio&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1%</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<h2 id="integration-example">Integration Example<a class="headerlink" href="#integration-example" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="sd">&quot;&quot;&quot;Full integration example: index a directory, search, budget, compress.&quot;&quot;&quot;</span>
+<a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>    <span class="n">TelemetryCollector</span><span class="p">,</span>
+<a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="n">BlockRegistry</span><span class="p">,</span>
+<a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>    <span class="n">Block</span><span class="p">,</span>
+<a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a>    <span class="n">HeuristicEngine</span><span class="p">,</span>
+<a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a>    <span class="n">Budgeter</span><span class="p">,</span>
+<a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>    <span class="n">get_engine</span><span class="p">,</span>
+<a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="p">)</span>
+<a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.walker</span><span class="w"> </span><span class="kn">import</span> <span class="n">walk_directory</span>
+<a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.processors</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_processor</span>
+<a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.tokens</span><span class="w"> </span><span class="kn">import</span> <span class="n">count_tokens</span>
+<a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="kn">import</span><span class="w"> </span><span class="nn">hashlib</span>
+<a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a>
+<a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="c1"># Set up</span>
+<a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="n">registry</span> <span class="o">=</span> <span class="n">BlockRegistry</span><span class="p">(</span><span class="s2">&quot;my_project.db&quot;</span><span class="p">)</span>
+<a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a><span class="n">engine</span> <span class="o">=</span> <span class="n">get_engine</span><span class="p">(</span><span class="s2">&quot;heuristic&quot;</span><span class="p">)</span>
+<a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a><span class="n">collector</span> <span class="o">=</span> <span class="n">TelemetryCollector</span><span class="p">()</span>
+<a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a><span class="n">budgeter</span> <span class="o">=</span> <span class="n">Budgeter</span><span class="p">()</span>
+<a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a>
+<a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a><span class="c1"># Index a directory</span>
+<a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a><span class="k">for</span> <span class="n">path</span><span class="p">,</span> <span class="n">ftype</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">walk_directory</span><span class="p">(</span><span class="s2">&quot;./docs&quot;</span><span class="p">):</span>
+<a id="__codelineno-20-23" name="__codelineno-20-23" href="#__codelineno-20-23"></a>    <span class="n">content</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<a id="__codelineno-20-24" name="__codelineno-20-24" href="#__codelineno-20-24"></a>    <span class="n">processor</span> <span class="o">=</span> <span class="n">get_processor</span><span class="p">(</span><span class="n">ftype</span><span class="p">)</span>
+<a id="__codelineno-20-25" name="__codelineno-20-25" href="#__codelineno-20-25"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">processor</span><span class="p">:</span>
+<a id="__codelineno-20-26" name="__codelineno-20-26" href="#__codelineno-20-26"></a>        <span class="k">continue</span>
+<a id="__codelineno-20-27" name="__codelineno-20-27" href="#__codelineno-20-27"></a>    <span class="n">compressed</span> <span class="o">=</span> <span class="n">processor</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+<a id="__codelineno-20-28" name="__codelineno-20-28" href="#__codelineno-20-28"></a>    <span class="n">block</span> <span class="o">=</span> <span class="n">Block</span><span class="p">(</span>
+<a id="__codelineno-20-29" name="__codelineno-20-29" href="#__codelineno-20-29"></a>        <span class="n">path</span><span class="o">=</span><span class="n">path</span><span class="p">,</span>
+<a id="__codelineno-20-30" name="__codelineno-20-30" href="#__codelineno-20-30"></a>        <span class="n">content_hash</span><span class="o">=</span><span class="n">hashlib</span><span class="o">.</span><span class="n">sha256</span><span class="p">(</span><span class="n">content</span><span class="o">.</span><span class="n">encode</span><span class="p">())</span><span class="o">.</span><span class="n">hexdigest</span><span class="p">(),</span>
+<a id="__codelineno-20-31" name="__codelineno-20-31" href="#__codelineno-20-31"></a>        <span class="n">version</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-20-32" name="__codelineno-20-32" href="#__codelineno-20-32"></a>        <span class="n">file_type</span><span class="o">=</span><span class="n">ftype</span><span class="p">,</span>
+<a id="__codelineno-20-33" name="__codelineno-20-33" href="#__codelineno-20-33"></a>        <span class="n">raw_tokens</span><span class="o">=</span><span class="n">count_tokens</span><span class="p">(</span><span class="n">content</span><span class="p">),</span>
+<a id="__codelineno-20-34" name="__codelineno-20-34" href="#__codelineno-20-34"></a>        <span class="n">compressed_tokens</span><span class="o">=</span><span class="n">count_tokens</span><span class="p">(</span><span class="n">compressed</span><span class="p">),</span>
+<a id="__codelineno-20-35" name="__codelineno-20-35" href="#__codelineno-20-35"></a>        <span class="n">compressed_content</span><span class="o">=</span><span class="n">compressed</span><span class="p">,</span>
+<a id="__codelineno-20-36" name="__codelineno-20-36" href="#__codelineno-20-36"></a>    <span class="p">)</span>
+<a id="__codelineno-20-37" name="__codelineno-20-37" href="#__codelineno-20-37"></a>    <span class="n">registry</span><span class="o">.</span><span class="n">add_block</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
+<a id="__codelineno-20-38" name="__codelineno-20-38" href="#__codelineno-20-38"></a>
+<a id="__codelineno-20-39" name="__codelineno-20-39" href="#__codelineno-20-39"></a><span class="c1"># Search and retrieve</span>
+<a id="__codelineno-20-40" name="__codelineno-20-40" href="#__codelineno-20-40"></a><span class="n">results</span> <span class="o">=</span> <span class="n">registry</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s2">&quot;token compression&quot;</span><span class="p">,</span> <span class="n">top_k</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<a id="__codelineno-20-41" name="__codelineno-20-41" href="#__codelineno-20-41"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Found </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span><span class="si">}</span><span class="s2"> results&quot;</span><span class="p">)</span>
+<a id="__codelineno-20-42" name="__codelineno-20-42" href="#__codelineno-20-42"></a>
+<a id="__codelineno-20-43" name="__codelineno-20-43" href="#__codelineno-20-43"></a><span class="n">registry</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
-<p><strong>Methods:</strong>
-- <code>compress(text: str) -&gt; str</code> — Compress text to best effort
-- <code>compact(text: str, hints: CompactionHints) -&gt; str</code> — Compress with budget constraints
-- <code>compress_with_stats(text: str) -&gt; dict</code> — Return compressed text + metrics</p>
-<hr />
-<h3 id="completiontracker">CompletionTracker<a class="headerlink" href="#completiontracker" title="Permanent link">&para;</a></h3>
-<p>Track API spend, token counts, and latency.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">CompletionTracker</span>
-
-<span class="n">tracker</span> <span class="o">=</span> <span class="n">CompletionTracker</span><span class="p">()</span>
-
-<span class="c1"># Record a completion</span>
-<span class="n">tracker</span><span class="o">.</span><span class="n">record</span><span class="p">(</span>
-    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;claude-3-5-sonnet-20241022&quot;</span><span class="p">,</span>
-    <span class="n">tokens_in</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span>
-    <span class="n">tokens_out</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span>
-    <span class="n">cost_usd</span><span class="o">=</span><span class="mf">0.0156</span><span class="p">,</span>
-    <span class="n">latency_ms</span><span class="o">=</span><span class="mi">1250</span>
-<span class="p">)</span>
-
-<span class="c1"># Summarize stats</span>
-<span class="n">summary</span> <span class="o">=</span> <span class="n">tracker</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total cost: $</span><span class="si">{</span><span class="n">summary</span><span class="p">[</span><span class="s1">&#39;total_cost&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.4f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Requests: </span><span class="si">{</span><span class="n">summary</span><span class="p">[</span><span class="s1">&#39;num_requests&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Avg latency: </span><span class="si">{</span><span class="n">summary</span><span class="p">[</span><span class="s1">&#39;avg_latency_ms&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.0f</span><span class="si">}</span><span class="s2">ms&quot;</span><span class="p">)</span>
-
-<span class="c1"># Get top models by cost</span>
-<span class="n">expensive</span> <span class="o">=</span> <span class="n">tracker</span><span class="o">.</span><span class="n">top_models_by_cost</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-</code></pre></div>
-<p><strong>Methods:</strong>
-- <code>record(model, tokens_in, tokens_out, cost_usd, latency_ms=None)</code>
-- <code>summary() -&gt; dict</code> — Aggregate statistics
-- <code>top_models_by_cost(limit=5) -&gt; list</code> — Most expensive models
-- <code>stats_by_model(model: str) -&gt; dict</code> — Stats for one model</p>
-<hr />
-<h3 id="cachemanager">CacheManager<a class="headerlink" href="#cachemanager" title="Permanent link">&para;</a></h3>
-<p>In-process cache with hit-rate tracking.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">CacheManager</span>
-
-<span class="n">cache</span> <span class="o">=</span> <span class="n">CacheManager</span><span class="p">(</span><span class="n">ttl_seconds</span><span class="o">=</span><span class="mi">3600</span><span class="p">)</span>
-
-<span class="c1"># Set and get</span>
-<span class="n">cache</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;key1&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;response&quot;</span><span class="p">:</span> <span class="s2">&quot;data&quot;</span><span class="p">})</span>
-<span class="n">value</span> <span class="o">=</span> <span class="n">cache</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;key1&quot;</span><span class="p">)</span>
-
-<span class="c1"># Stats</span>
-<span class="n">stats</span> <span class="o">=</span> <span class="n">cache</span><span class="o">.</span><span class="n">stats</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Hit rate: </span><span class="si">{</span><span class="n">stats</span><span class="p">[</span><span class="s1">&#39;hit_rate&#39;</span><span class="p">]</span><span class="si">:</span><span class="s2">.1%</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-
-<span class="c1"># Clear</span>
-<span class="n">cache</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
-</code></pre></div>
-<p><strong>Methods:</strong>
-- <code>set(key: str, value: Any, ttl_seconds: int = None)</code>
-- <code>get(key: str) -&gt; Any | None</code>
-- <code>delete(key: str)</code>
-- <code>clear()</code>
-- <code>stats() -&gt; dict</code> — Hit rate, size, evictions</p>
-<hr />
-<h3 id="requestvalidator">RequestValidator<a class="headerlink" href="#requestvalidator" title="Permanent link">&para;</a></h3>
-<p>Validate and normalize incoming LLM requests.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.validation</span><span class="w"> </span><span class="kn">import</span> <span class="n">RequestValidator</span>
-
-<span class="n">validator</span> <span class="o">=</span> <span class="n">RequestValidator</span><span class="p">()</span>
-
-<span class="c1"># Validate request</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">validator</span><span class="o">.</span><span class="n">validate</span><span class="p">({</span>
-    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;gpt-4&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Hello&quot;</span><span class="p">}],</span>
-    <span class="s2">&quot;max_tokens&quot;</span><span class="p">:</span> <span class="mi">100</span>
-<span class="p">})</span>
-
-<span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">is_valid</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Request OK&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Errors: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">errors</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p><strong>Methods:</strong>
-- <code>validate(request: dict) -&gt; ValidationResult</code> — Check request validity
-- <code>normalize(request: dict) -&gt; dict</code> — Normalize to standard format</p>
-<hr />
-<h2 id="adapters">Adapters<a class="headerlink" href="#adapters" title="Permanent link">&para;</a></h2>
-<p>Adapters let you use TokenPak with different LLM SDKs.</p>
-<h3 id="base-adapter-pattern">Base Adapter Pattern<a class="headerlink" href="#base-adapter-pattern" title="Permanent link">&para;</a></h3>
-<p>All adapters implement:
-- <code>prepare_request(request: dict) -&gt; dict</code> — Validate and normalize
-- <code>send(request: dict) -&gt; dict</code> — POST to proxy
-- <code>parse_response(response: dict) -&gt; dict</code> — Convert response to SDK format
-- <code>extract_tokens(response: dict) -&gt; dict</code> — Get token counts
-- <code>call(request: dict) -&gt; dict</code> — Full pipeline</p>
-<h3 id="anthropicadapter">AnthropicAdapter<a class="headerlink" href="#anthropicadapter" title="Permanent link">&para;</a></h3>
-<p>Use TokenPak proxy with Anthropic SDK.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.adapters</span><span class="w"> </span><span class="kn">import</span> <span class="n">AnthropicAdapter</span>
-
-<span class="n">adapter</span> <span class="o">=</span> <span class="n">AnthropicAdapter</span><span class="p">(</span>
-    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://localhost:8766&quot;</span><span class="p">,</span>
-    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;sk-ant-...&quot;</span>
-<span class="p">)</span>
-
-<span class="c1"># Full request</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">call</span><span class="p">({</span>
-    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;claude-3-5-sonnet-20241022&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;max_tokens&quot;</span><span class="p">:</span> <span class="mi">1024</span><span class="p">,</span>
-    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Explain quantum computing&quot;</span><span class="p">}</span>
-    <span class="p">]</span>
-<span class="p">})</span>
-
-<span class="c1"># Extract tokens</span>
-<span class="n">tokens</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">extract_tokens</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Input: </span><span class="si">{</span><span class="n">tokens</span><span class="p">[</span><span class="s1">&#39;input_tokens&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Output: </span><span class="si">{</span><span class="n">tokens</span><span class="p">[</span><span class="s1">&#39;output_tokens&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="openaiadapter">OpenAIAdapter<a class="headerlink" href="#openaiadapter" title="Permanent link">&para;</a></h3>
-<p>Use TokenPak proxy with OpenAI SDK.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.adapters</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIAdapter</span>
-
-<span class="n">adapter</span> <span class="o">=</span> <span class="n">OpenAIAdapter</span><span class="p">(</span>
-    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://localhost:8766/v1&quot;</span><span class="p">,</span>
-    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;sk-...&quot;</span>
-<span class="p">)</span>
-
-<span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">call</span><span class="p">({</span>
-    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;gpt-4&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Hello&quot;</span><span class="p">}]</span>
-<span class="p">})</span>
-
-<span class="n">tokens</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">extract_tokens</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-</code></pre></div>
-<h3 id="langchainadapter">LangChainAdapter<a class="headerlink" href="#langchainadapter" title="Permanent link">&para;</a></h3>
-<p>Route LangChain requests through TokenPak.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.adapters</span><span class="w"> </span><span class="kn">import</span> <span class="n">LangChainAdapter</span>
-
-<span class="n">adapter</span> <span class="o">=</span> <span class="n">LangChainAdapter</span><span class="p">(</span>
-    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://localhost:8766&quot;</span><span class="p">,</span>
-    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;sk-...&quot;</span>
-<span class="p">)</span>
-
-<span class="c1"># Automatically routes to Anthropic or OpenAI based on provider field</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">call</span><span class="p">({</span>
-    <span class="s2">&quot;provider&quot;</span><span class="p">:</span> <span class="s2">&quot;openai&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;gpt-4&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Hi&quot;</span><span class="p">}]</span>
-<span class="p">})</span>
-</code></pre></div>
-<h3 id="litellmadapter">LiteLLMAdapter<a class="headerlink" href="#litellmadapter" title="Permanent link">&para;</a></h3>
-<p>Use TokenPak with LiteLLM-style model strings.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.adapters</span><span class="w"> </span><span class="kn">import</span> <span class="n">LiteLLMAdapter</span>
-
-<span class="n">adapter</span> <span class="o">=</span> <span class="n">LiteLLMAdapter</span><span class="p">(</span>
-    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;http://localhost:8766&quot;</span><span class="p">,</span>
-    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;sk-...&quot;</span>
-<span class="p">)</span>
-
-<span class="c1"># Provider inferred from model string</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">call</span><span class="p">({</span>
-    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;openai/gpt-4o&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Hi&quot;</span><span class="p">}]</span>
-<span class="p">})</span>
-
-<span class="c1"># Or Anthropic</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">call</span><span class="p">({</span>
-    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;anthropic/claude-3-5-sonnet-20241022&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Hi&quot;</span><span class="p">}],</span>
-    <span class="s2">&quot;max_tokens&quot;</span><span class="p">:</span> <span class="mi">512</span>
-<span class="p">})</span>
-</code></pre></div>
-<hr />
-<h2 id="exceptions">Exceptions<a class="headerlink" href="#exceptions" title="Permanent link">&para;</a></h2>
-<h3 id="tokenpakadaptererror">TokenPakAdapterError<a class="headerlink" href="#tokenpakadaptererror" title="Permanent link">&para;</a></h3>
-<p>Base exception for all adapter errors.</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.adapters</span><span class="w"> </span><span class="kn">import</span> <span class="n">TokenPakAdapterError</span>
-
-<span class="k">try</span><span class="p">:</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-<span class="k">except</span> <span class="n">TokenPakAdapterError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Adapter error (HTTP </span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">): </span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">message</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Raw response: </span><span class="si">{</span><span class="n">e</span><span class="o">.</span><span class="n">raw</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-<p><strong>Attributes:</strong>
-- <code>message: str</code> — Error description
-- <code>status_code: int | None</code> — HTTP status code
-- <code>raw: Any</code> — Raw response body</p>
-<hr />
-<h2 id="common-patterns">Common Patterns<a class="headerlink" href="#common-patterns" title="Permanent link">&para;</a></h2>
-<h3 id="pattern-track-costs-per-request">Pattern: Track Costs Per Request<a class="headerlink" href="#pattern-track-costs-per-request" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.adapters</span><span class="w"> </span><span class="kn">import</span> <span class="n">AnthropicAdapter</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">CompletionTracker</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
-
-<span class="n">adapter</span> <span class="o">=</span> <span class="n">AnthropicAdapter</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
-<span class="n">tracker</span> <span class="o">=</span> <span class="n">CompletionTracker</span><span class="p">()</span>
-
-<span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-<span class="n">latency_ms</span> <span class="o">=</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1000</span>
-
-<span class="n">tokens</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">extract_tokens</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
-<span class="n">tracker</span><span class="o">.</span><span class="n">record</span><span class="p">(</span>
-    <span class="n">model</span><span class="o">=</span><span class="n">request</span><span class="p">[</span><span class="s2">&quot;model&quot;</span><span class="p">],</span>
-    <span class="n">tokens_in</span><span class="o">=</span><span class="n">tokens</span><span class="p">[</span><span class="s2">&quot;input_tokens&quot;</span><span class="p">],</span>
-    <span class="n">tokens_out</span><span class="o">=</span><span class="n">tokens</span><span class="p">[</span><span class="s2">&quot;output_tokens&quot;</span><span class="p">],</span>
-    <span class="n">cost_usd</span><span class="o">=</span><span class="n">compute_cost</span><span class="p">(</span><span class="n">tokens</span><span class="p">),</span>
-    <span class="n">latency_ms</span><span class="o">=</span><span class="n">latency_ms</span>
-<span class="p">)</span>
-</code></pre></div>
-<h3 id="pattern-compress-before-sending">Pattern: Compress Before Sending<a class="headerlink" href="#pattern-compress-before-sending" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak</span><span class="w"> </span><span class="kn">import</span> <span class="n">HeuristicEngine</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.engines.base</span><span class="w"> </span><span class="kn">import</span> <span class="n">CompactionHints</span>
-
-<span class="n">engine</span> <span class="o">=</span> <span class="n">HeuristicEngine</span><span class="p">()</span>
-
-<span class="c1"># Compress long context</span>
-<span class="n">original_context</span> <span class="o">=</span> <span class="s2">&quot;... very long file contents ...&quot;</span>
-<span class="n">compressed</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">compact</span><span class="p">(</span>
-    <span class="n">original_context</span><span class="p">,</span>
-    <span class="n">CompactionHints</span><span class="p">(</span><span class="n">target_tokens</span><span class="o">=</span><span class="mi">2048</span><span class="p">)</span>
-<span class="p">)</span>
-
-<span class="c1"># Use in request</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">call</span><span class="p">({</span>
-    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;claude-3-5-sonnet-20241022&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span>
-            <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Context:</span><span class="se">\n</span><span class="si">{</span><span class="n">compressed</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">Question: ?&quot;</span>
-        <span class="p">}</span>
-    <span class="p">],</span>
-    <span class="s2">&quot;max_tokens&quot;</span><span class="p">:</span> <span class="mi">500</span>
-<span class="p">})</span>
-</code></pre></div>
-<h3 id="pattern-validate-request-before-sending">Pattern: Validate Request Before Sending<a class="headerlink" href="#pattern-validate-request-before-sending" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">tokenpak.validation</span><span class="w"> </span><span class="kn">import</span> <span class="n">RequestValidator</span>
-
-<span class="n">validator</span> <span class="o">=</span> <span class="n">RequestValidator</span><span class="p">()</span>
-<span class="n">request</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s2">&quot;model&quot;</span><span class="p">:</span> <span class="s2">&quot;gpt-4&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span><span class="o">...</span><span class="p">],</span>
-    <span class="s2">&quot;max_tokens&quot;</span><span class="p">:</span> <span class="mi">100</span>
-<span class="p">}</span>
-
-<span class="n">result</span> <span class="o">=</span> <span class="n">validator</span><span class="o">.</span><span class="n">validate</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-<span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="o">.</span><span class="n">is_valid</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Invalid request: </span><span class="si">{</span><span class="n">result</span><span class="o">.</span><span class="n">errors</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="n">adapter</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
-</code></pre></div>
-<hr />
-<h2 id="type-hints">Type Hints<a class="headerlink" href="#type-hints" title="Permanent link">&para;</a></h2>
-<p>Common type patterns used across TokenPak:</p>
-<ul>
-<li><code>Optional[T]</code> — Value may be None</li>
-<li><code>Union[A, B]</code> or <code>A | B</code> — Either type accepted</li>
-<li><code>list[T]</code> — List of items of type T</li>
-<li><code>dict[K, V]</code> — Dictionary mapping K → V</li>
-<li><code>Any</code> — Dynamically typed</li>
-</ul>
-<p>Example:
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">compress</span><span class="p">(</span>
-    <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-    <span class="n">hints</span><span class="p">:</span> <span class="n">CompactionHints</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-    <span class="o">...</span>
-</code></pre></div></p>
-<hr />
-<h2 id="module-organization">Module Organization<a class="headerlink" href="#module-organization" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>tokenpak/
-├── adapters/
-│   ├── __init__.py        # AnthropicAdapter, OpenAIAdapter, etc.
-│   ├── base.py            # TokenPakAdapter (base class)
-│   ├── anthropic.py       # Anthropic SDK adapter
-│   ├── openai.py          # OpenAI SDK adapter
-│   ├── langchain.py       # LangChain adapter
-│   └── litellm.py         # LiteLLM adapter
-├── engines/
-│   ├── base.py            # CompressionEngine (base), CompactionHints
-│   └── heuristic.py       # HeuristicEngine (default)
-├── validation/
-│   └── request_validator.py  # RequestValidator
-├── __init__.py            # Top-level imports
-└── telemetry/
-    └── ...                # CacheManager, CompletionTracker
-</code></pre></div>
-<hr />
-<h2 id="getting-help">Getting Help<a class="headerlink" href="#getting-help" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Examples:</strong> See <code>~/vault/01_PROJECTS/tokenpak/examples/</code></li>
-<li><strong>Tests:</strong> See <code>~/vault/01_PROJECTS/tokenpak/tests/</code></li>
-<li><strong>Troubleshooting:</strong> See <a href="../QUICKSTART/#troubleshooting">QUICKSTART.md</a></li>
-<li><strong>Issues:</strong> Open a GitHub issue on <a href="https://github.com/kaywhy331/tokenpak">kaywhy331/tokenpak</a></li>
-</ul>
-<hr />
-<p><strong>Last updated:</strong> 2026-03-27 | <strong>TokenPak v1.0.2+</strong></p>
 
 
 
@@ -3098,6 +1675,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -3114,10 +1693,6 @@
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      Copyright &copy; 2026 TokenPak Contributors
-    </div>
   
   
     Made with
@@ -3141,6 +1716,17 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://pypi.org/project/tokenpak/" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+    </a>
+  
 </div>
       
     </div>
@@ -3156,7 +1742,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>

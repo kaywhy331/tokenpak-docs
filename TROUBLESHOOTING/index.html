@@ -1,0 +1,2063 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Zero-token operations. Maximum context efficiency.">
+      
+      
+        <meta name="author" content="TokenPak Team">
+      
+      
+        <link rel="canonical" href="https://docs.tokenpak.dev/TROUBLESHOOTING/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>TokenPak Deployment Troubleshooting Guide - TokenPak</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tokenpak-deployment-troubleshooting-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="TokenPak" class="md-header__button md-logo" aria-label="TokenPak" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TokenPak
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TokenPak Deployment Troubleshooting Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/tokenpak/tokenpak" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tokenpak/tokenpak
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../getting-started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Getting Started
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../guides/proxy-setup/" class="md-tabs__link">
+          
+  
+  
+  Guides
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cli-reference/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  CLI Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../api-reference/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  API Reference
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../compression/" class="md-tabs__link">
+          
+  
+  
+  Deep Dives
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../blog/zero-data-architecture/" class="md-tabs__link">
+          
+  
+  
+  Blog
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TokenPak" class="md-nav__button md-logo" aria-label="TokenPak" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TokenPak
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/tokenpak/tokenpak" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    tokenpak/tokenpak
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Getting Started
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guides
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guides
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/proxy-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proxy Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/recipes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recipe Development
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/telemetry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telemetry & Dashboard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/team-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Team Server
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CLI Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../api-reference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Reference
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Dives
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Deep Dives
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../compression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cache/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Caching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../telemetry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telemetry & Privacy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Blog
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Blog
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/zero-data-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why Zero Data Architecture
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../blog/save-35-percent-tokens/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Save 35% on LLM Tokens
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-startup-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1) Startup Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1) Startup Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-port-already-in-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Port already in use
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-config-file-not-found" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Config file not found
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-missing-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.3 Missing dependencies
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-permission-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.4 Permission errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-health-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2) Health &amp; Performance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2) Health &amp; Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-high-latency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 High latency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-memory-leaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 Memory leaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-cpu-spikes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 CPU spikes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-connection-timeouts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 Connection timeouts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-compression-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3) Compression Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3) Compression Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-blocks-not-compressing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Blocks not compressing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-compression-ratio-is-low" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Compression ratio is low
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-cache-misses-too-high" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Cache misses too high
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-logging-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4) Logging &amp; Diagnostics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4) Logging &amp; Diagnostics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-enable-debug-logging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Enable debug logging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-view-request-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 View request logs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-trace-compression-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Trace compression decisions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-performance-profiling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 Performance profiling
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-cloud-deployments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5) Cloud Deployments
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5) Cloud Deployments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-gcp-cloud-run-errors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 GCP Cloud Run errors
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-aws-ecs-task-failures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 AWS ECS task failures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-azure-container-instances" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.3 Azure Container Instances
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-quick-triage-runbook-10-minute-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6) Quick Triage Runbook (10-minute flow)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-openclaw-integration-issues-2026-03-12-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7) OpenClaw Integration Issues (2026-03-12 Session)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7) OpenClaw Integration Issues (2026-03-12 Session)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#71-primary-model-reverting-after-restart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.1 Primary model reverting after restart
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#72-missing-tokenpak-source-files-bytecode-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.2 Missing TokenPak source files (bytecode only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#73-agent-missing-module-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.3 Agent missing module updates
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#74-case-sensitivity-collision-in-queue-directories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.4 Case sensitivity collision in queue directories
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#75-stale-compiled-bytecode-in-pycache" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.5 Stale compiled bytecode in pycache
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#76-duplicate-model-aliases-causing-routing-conflicts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7.6 Duplicate model aliases causing routing conflicts
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-standard-health-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8) Standard Health Commands
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="tokenpak-deployment-troubleshooting-guide">TokenPak Deployment Troubleshooting Guide<a class="headerlink" href="#tokenpak-deployment-troubleshooting-guide" title="Permanent link">&para;</a></h1>
+<p>Use this guide to quickly diagnose and resolve common TokenPak deployment issues in local, container, and cloud environments.</p>
+<hr />
+<h2 id="1-startup-issues">1) Startup Issues<a class="headerlink" href="#1-startup-issues" title="Permanent link">&para;</a></h2>
+<h3 id="11-port-already-in-use">1.1 Port already in use<a class="headerlink" href="#11-port-already-in-use" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Startup fails with bind error
+- Health endpoint never comes up</p>
+<p><strong>Example errors</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>OSError: [Errno 98] Address already in use
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Error: listen EADDRINUSE: address already in use 0.0.0.0:8787
+</code></pre></div></p>
+<p><strong>Diagnostics</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Check what process is holding the port</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>sudo<span class="w"> </span>lsof<span class="w"> </span>-iTCP:8787<span class="w"> </span>-sTCP:LISTEN<span class="w"> </span>-n<span class="w"> </span>-P
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># Alternative</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>ss<span class="w"> </span>-ltnp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>:8787
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Stop the conflicting process.
+2. Change TokenPak port (<code>PORT</code> env var or deployment config).
+3. Restart and verify:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>curl<span class="w"> </span>-fsS<span class="w"> </span>http://127.0.0.1:8787/health
+</code></pre></div></p>
+<hr />
+<h3 id="12-config-file-not-found">1.2 Config file not found<a class="headerlink" href="#12-config-file-not-found" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Service exits immediately
+- Defaults are loaded unintentionally</p>
+<p><strong>Example errors</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>FileNotFoundError: config/tokenpak.yml
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>ERROR: failed to load configuration from /app/config/tokenpak.yml
+</code></pre></div></p>
+<p><strong>Diagnostics</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Verify mount/path</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>ls<span class="w"> </span>-lah<span class="w"> </span>/app/config
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Verify runtime env</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>printenv<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;TOKENPAK|CONFIG|PORT|ENV&#39;</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Confirm correct config path in startup command.
+2. Ensure ConfigMap/volume mount is attached (K8s/ECS task def/Cloud Run secret mount).
+3. Add a startup assertion for required keys before serving traffic.</p>
+<hr />
+<h3 id="13-missing-dependencies">1.3 Missing dependencies<a class="headerlink" href="#13-missing-dependencies" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Crash during import or boot
+- Container starts then exits repeatedly</p>
+<p><strong>Example errors</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>ModuleNotFoundError: No module named &#39;brotli&#39;
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>ImportError: libzstd.so.1: cannot open shared object file
+</code></pre></div></p>
+<p><strong>Diagnostics</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># In container/shell</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>python<span class="w"> </span>-V
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>pip<span class="w"> </span>freeze<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;brotli|zstandard|uvicorn|fastapi&#39;</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># Validate image build layers</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>docker<span class="w"> </span>image<span class="w"> </span>inspect<span class="w"> </span>tokenpak:latest<span class="w"> </span>--format<span class="w"> </span><span class="s1">&#39;{{.Id}}&#39;</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Rebuild image with clean cache:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>docker<span class="w"> </span>build<span class="w"> </span>--no-cache<span class="w"> </span>-t<span class="w"> </span>tokenpak:latest<span class="w"> </span>.
+</code></pre></div>
+2. Install missing package/version pin in <code>requirements.txt</code>.
+3. Re-deploy and watch logs for first successful startup.</p>
+<hr />
+<h3 id="14-permission-errors">1.4 Permission errors<a class="headerlink" href="#14-permission-errors" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Cannot write cache/temp/log files
+- Service works locally, fails in container/cloud</p>
+<p><strong>Example errors</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>PermissionError: [Errno 13] Permission denied: &#39;/var/log/tokenpak.log&#39;
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>EACCES: permission denied, mkdir &#39;/app/cache&#39;
+</code></pre></div></p>
+<p><strong>Diagnostics</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>id
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>ls<span class="w"> </span>-lah<span class="w"> </span>/app<span class="w"> </span>/app/cache<span class="w"> </span>/var/log
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Ensure runtime user owns writable directories.
+2. In Dockerfile, create/chown write paths during build.
+3. In orchestrator, set security context or writable volume.</p>
+<hr />
+<h2 id="2-health-performance">2) Health &amp; Performance<a class="headerlink" href="#2-health-performance" title="Permanent link">&para;</a></h2>
+<h3 id="21-high-latency">2.1 High latency<a class="headerlink" href="#21-high-latency" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- P95/P99 response times spike
+- Client timeout/retry rates increase</p>
+<p><strong>Checks</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># Service health</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>curl<span class="w"> </span>-sS<span class="w"> </span>http://127.0.0.1:8787/health<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="c1"># Quick endpoint timing</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>curl<span class="w"> </span>-s<span class="w"> </span>-o<span class="w"> </span>/dev/null<span class="w"> </span>-w<span class="w"> </span><span class="s1">&#39;dns=%{time_namelookup} connect=%{time_connect} ttfb=%{time_starttransfer} total=%{time_total}\n&#39;</span><span class="w"> </span><span class="se">\</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a><span class="w">  </span>http://127.0.0.1:8787/health
+</code></pre></div></p>
+<p><strong>Likely causes</strong>
+- Upstream model/API latency
+- Cold starts / underprovisioned CPU
+- Serialization/compression overhead</p>
+<p><strong>Fixes</strong>
+1. Scale replicas or CPU.
+2. Warm instances before traffic cutover.
+3. Enable response caching for repeat prompts.
+4. Reduce payload size and disable heavy debug traces in prod.</p>
+<hr />
+<h3 id="22-memory-leaks">2.2 Memory leaks<a class="headerlink" href="#22-memory-leaks" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- RSS climbs continuously
+- OOMKilled events / restarts</p>
+<p><strong>Checks</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Process memory over time</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>ps<span class="w"> </span>-o<span class="w"> </span>pid,ppid,%mem,rss,vsz,cmd<span class="w"> </span>-p<span class="w"> </span><span class="k">$(</span>pgrep<span class="w"> </span>-f<span class="w"> </span><span class="s1">&#39;proxy.py|tokenpak&#39;</span><span class="k">)</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># Container memory stats</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>docker<span class="w"> </span>stats<span class="w"> </span>--no-stream
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Confirm object/cache eviction policy is active.
+2. Limit max in-memory cache size (env/config).
+3. Capture heap profile in staging and identify retained objects.
+4. Roll with shorter instance lifetime until root cause is fixed.</p>
+<hr />
+<h3 id="23-cpu-spikes">2.3 CPU spikes<a class="headerlink" href="#23-cpu-spikes" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Request queueing
+- Autoscaler churn</p>
+<p><strong>Checks</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>top<span class="w"> </span>-H<span class="w"> </span>-p<span class="w"> </span><span class="k">$(</span>pgrep<span class="w"> </span>-f<span class="w"> </span><span class="s1">&#39;proxy.py|tokenpak&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-1<span class="k">)</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="c1"># If available</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>pidstat<span class="w"> </span>-u<span class="w"> </span>-p<span class="w"> </span><span class="k">$(</span>pgrep<span class="w"> </span>-f<span class="w"> </span><span class="s1">&#39;proxy.py|tokenpak&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>tr<span class="w"> </span><span class="s1">&#39;\n&#39;</span><span class="w"> </span><span class="s1">&#39;,&#39;</span><span class="k">)</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">5</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Reduce compression level for hot paths.
+2. Tune worker count for available vCPU.
+3. Offload expensive preprocessing to async/background stage.</p>
+<hr />
+<h3 id="24-connection-timeouts">2.4 Connection timeouts<a class="headerlink" href="#24-connection-timeouts" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- 504/408 from gateway/load balancer
+- Client retries succeed intermittently</p>
+<p><strong>Checks</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="c1"># Test from app host and from outside network path</span>
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>curl<span class="w"> </span>-v<span class="w"> </span>--max-time<span class="w"> </span><span class="m">15</span><span class="w"> </span>http://127.0.0.1:8787/health
+<a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>
+<a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="c1"># Check LB idle/request timeout settings (platform-specific)</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Increase upstream timeout to exceed worst-case processing time.
+2. Add client-side exponential backoff.
+3. Set sane keepalive settings between LB and service.</p>
+<hr />
+<h2 id="3-compression-issues">3) Compression Issues<a class="headerlink" href="#3-compression-issues" title="Permanent link">&para;</a></h2>
+<h3 id="31-blocks-not-compressing">3.1 Blocks not compressing<a class="headerlink" href="#31-blocks-not-compressing" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Responses always uncompressed
+- Compression stage appears skipped</p>
+<p><strong>Checks</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="c1"># Confirm compression flags are enabled</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>printenv<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;TOKENPAK_(COMPRESSION|CACHE|DEBUG)&#39;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="c1"># Verify response headers</span>
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>curl<span class="w"> </span>-i<span class="w"> </span>http://127.0.0.1:8787/health<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-i<span class="w"> </span><span class="s1">&#39;content-encoding\|x-tokenpak&#39;</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Enable compression feature flag.
+2. Ensure minimum block size threshold is not too high.
+3. Verify route middleware includes compression stage.</p>
+<hr />
+<h3 id="32-compression-ratio-is-low">3.2 Compression ratio is low<a class="headerlink" href="#32-compression-ratio-is-low" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Large outputs with little size reduction</p>
+<p><strong>Checks</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="c1"># Compare original vs compressed payload lengths from logs/metrics</span>
+<a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="c1"># Example jq extraction if JSON logs are available:</span>
+<a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>cat<span class="w"> </span>/var/log/tokenpak.jsonl<span class="w"> </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span><span class="s1">&#39;.orig_bytes, .comp_bytes&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>head
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Increase compression level (with CPU tradeoff).
+2. Use dictionary/training if payloads share recurring structures.
+3. Exclude already-compressed payload types from redundant compression.</p>
+<hr />
+<h3 id="33-cache-misses-too-high">3.3 Cache misses too high<a class="headerlink" href="#33-cache-misses-too-high" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Hit rate drops suddenly
+- Repeated prompts not reusing cached output</p>
+<p><strong>Checks</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="c1"># Example metrics endpoint</span>
+<a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>curl<span class="w"> </span>-sS<span class="w"> </span>http://127.0.0.1:8787/metrics<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;cache_hit|cache_miss|compression_ratio&#39;</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Normalize cache keys (whitespace/system metadata noise).
+2. Increase TTL for stable workloads.
+3. Ensure cache backend persistence is configured correctly.</p>
+<hr />
+<h2 id="4-logging-diagnostics">4) Logging &amp; Diagnostics<a class="headerlink" href="#4-logging-diagnostics" title="Permanent link">&para;</a></h2>
+<h3 id="41-enable-debug-logging">4.1 Enable debug logging<a class="headerlink" href="#41-enable-debug-logging" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="c1"># Example env toggle</span>
+<a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_LOG_LEVEL</span><span class="o">=</span>debug
+<a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">TOKENPAK_DEBUG_COMPRESSION</span><span class="o">=</span><span class="m">1</span>
+</code></pre></div>
+<p>Restart service and confirm startup logs include debug level.</p>
+<h3 id="42-view-request-logs">4.2 View request logs<a class="headerlink" href="#42-view-request-logs" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="c1"># Docker</span>
+<a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>docker<span class="w"> </span>logs<span class="w"> </span>-f<span class="w"> </span>&lt;container_name&gt;
+<a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>
+<a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="c1"># systemd</span>
+<a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a>journalctl<span class="w"> </span>-u<span class="w"> </span>tokenpak<span class="w"> </span>-f<span class="w"> </span>-n<span class="w"> </span><span class="m">200</span>
+</code></pre></div>
+<h3 id="43-trace-compression-decisions">4.3 Trace compression decisions<a class="headerlink" href="#43-trace-compression-decisions" title="Permanent link">&para;</a></h3>
+<p>Capture fields per request:
+- request_id
+- route/model
+- original_bytes
+- compressed_bytes
+- ratio
+- cache_hit
+- compression_reason (e.g., "below_threshold", "already_compressed")</p>
+<h3 id="44-performance-profiling">4.4 Performance profiling<a class="headerlink" href="#44-performance-profiling" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="c1"># Python profile snapshot (example)</span>
+<a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>python<span class="w"> </span>-m<span class="w"> </span>cProfile<span class="w"> </span>-o<span class="w"> </span>/tmp/tokenpak.prof<span class="w"> </span>proxy.py
+<a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
+<a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="c1"># Inspect hottest functions</span>
+<a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>python<span class="w"> </span>-<span class="w"> </span><span class="s">&lt;&lt;&#39;PY&#39;</span>
+<a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="s">import pstats</span>
+<a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="s">p = pstats.Stats(&#39;/tmp/tokenpak.prof&#39;)</span>
+<a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="s">p.sort_stats(&#39;cumtime&#39;).print_stats(30)</span>
+<a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="s">PY</span>
+</code></pre></div>
+<hr />
+<h2 id="5-cloud-deployments">5) Cloud Deployments<a class="headerlink" href="#5-cloud-deployments" title="Permanent link">&para;</a></h2>
+<h3 id="51-gcp-cloud-run-errors">5.1 GCP Cloud Run errors<a class="headerlink" href="#51-gcp-cloud-run-errors" title="Permanent link">&para;</a></h3>
+<p><strong>Common issues</strong>
+- Container not listening on expected <code>PORT</code>
+- Startup timeout due to slow init</p>
+<p><strong>Checks</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>gcloud<span class="w"> </span>run<span class="w"> </span>services<span class="w"> </span>logs<span class="w"> </span><span class="nb">read</span><span class="w"> </span>tokenpak<span class="w"> </span>--region<span class="w"> </span>us-central1<span class="w"> </span>--limit<span class="w"> </span><span class="m">200</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Ensure app binds to <code>0.0.0.0:$PORT</code>.
+2. Increase CPU for startup-heavy workloads.
+3. Set min instances &gt; 0 to reduce cold starts.</p>
+<hr />
+<h3 id="52-aws-ecs-task-failures">5.2 AWS ECS task failures<a class="headerlink" href="#52-aws-ecs-task-failures" title="Permanent link">&para;</a></h3>
+<p><strong>Common issues</strong>
+- Task exits due to bad env/secret
+- Health check path mismatch</p>
+<p><strong>Checks</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>aws<span class="w"> </span>ecs<span class="w"> </span>describe-tasks<span class="w"> </span>--cluster<span class="w"> </span>&lt;cluster&gt;<span class="w"> </span>--tasks<span class="w"> </span>&lt;task-arn&gt;
+<a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a>aws<span class="w"> </span>logs<span class="w"> </span>tail<span class="w"> </span>/ecs/tokenpak<span class="w"> </span>--follow
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Validate task definition env vars and secret ARNs.
+2. Match container health check path/port to service config.
+3. Increase task memory if OOM observed.</p>
+<hr />
+<h3 id="53-azure-container-instances">5.3 Azure Container Instances<a class="headerlink" href="#53-azure-container-instances" title="Permanent link">&para;</a></h3>
+<p><strong>Common issues</strong>
+- Image pull/auth errors
+- DNS/network resolution failures</p>
+<p><strong>Checks</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>az<span class="w"> </span>container<span class="w"> </span>logs<span class="w"> </span>--resource-group<span class="w"> </span>&lt;rg&gt;<span class="w"> </span>--name<span class="w"> </span>tokenpak
+<a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>az<span class="w"> </span>container<span class="w"> </span>show<span class="w"> </span>--resource-group<span class="w"> </span>&lt;rg&gt;<span class="w"> </span>--name<span class="w"> </span>tokenpak<span class="w"> </span>--query<span class="w"> </span><span class="s2">&quot;instanceView.events&quot;</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. Verify ACR credentials/managed identity access.
+2. Confirm VNet/subnet and outbound egress rules.
+3. Recreate instance after correcting env and secrets.</p>
+<hr />
+<h2 id="6-quick-triage-runbook-10-minute-flow">6) Quick Triage Runbook (10-minute flow)<a class="headerlink" href="#6-quick-triage-runbook-10-minute-flow" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Is it up?</strong> <code>curl /health</code></li>
+<li><strong>If down:</strong> check startup logs + port/config/dependency/permission issues.</li>
+<li><strong>If slow:</strong> inspect latency + CPU/memory + upstream timings.</li>
+<li><strong>If compression poor:</strong> verify flags, thresholds, ratios, cache hit rate.</li>
+<li><strong>If cloud-only:</strong> use provider logs/events and fix runtime env/network mismatches.</li>
+<li><strong>After fix:</strong> validate health, run smoke test, and capture root cause + prevention note.</li>
+</ol>
+<hr />
+<h2 id="7-openclaw-integration-issues-2026-03-12-session">7) OpenClaw Integration Issues (2026-03-12 Session)<a class="headerlink" href="#7-openclaw-integration-issues-2026-03-12-session" title="Permanent link">&para;</a></h2>
+<h3 id="71-primary-model-reverting-after-restart">7.1 Primary model reverting after restart<a class="headerlink" href="#71-primary-model-reverting-after-restart" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Gateway config shows TokenPak routing (e.g., <code>tokenpak-anthropic/claude-sonnet-4-6</code>)
+- After restart, reverts to direct provider (e.g., <code>anthropic/claude-haiku-4-5</code>)
+- Manual config patches don't persist</p>
+<p><strong>Root cause</strong>
+The <code>tokenpak-inject.sh</code> script (runs as ExecStartPre) was overwriting manually-set TokenPak primaries during startup interleave process.</p>
+<p><strong>Diagnostics</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># Check primary model</span>
+<a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import json; cfg=json.load(open(&#39;</span><span class="nv">$HOME</span><span class="s2">/.openclaw/openclaw.json&#39;)); print(f&#39;Primary: {cfg[\&quot;agents\&quot;][\&quot;defaults\&quot;][\&quot;model\&quot;][\&quot;primary\&quot;]}&#39;)&quot;</span>
+<a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>
+<a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a><span class="c1"># Check if it reverts after restart</span>
+<a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>systemctl<span class="w"> </span>--user<span class="w"> </span>restart<span class="w"> </span>openclaw-gateway.service
+<a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>sleep<span class="w"> </span><span class="m">5</span>
+<a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import json; cfg=json.load(open(&#39;</span><span class="nv">$HOME</span><span class="s2">/.openclaw/openclaw.json&#39;)); print(f&#39;After restart: {cfg[\&quot;agents\&quot;][\&quot;defaults\&quot;][\&quot;model\&quot;][\&quot;primary\&quot;]}&#39;)&quot;</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. <strong>Root cause fix (permanent):</strong> Modify <code>~/.local/bin/tokenpak-inject.sh</code> to preserve explicitly-set TokenPak primaries:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="c1"># In the interleave() function, add early exit:</span>
+<a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="k">if</span> <span class="n">primary</span> <span class="ow">and</span> <span class="n">is_tp</span><span class="p">(</span><span class="n">primary</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]):</span>
+<a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a>    <span class="c1"># Primary is already tokenpak — don&#39;t change it</span>
+<a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>    <span class="k">return</span> <span class="n">model_cfg</span><span class="p">,</span> <span class="kc">False</span>
+</code></pre></div></p>
+<ol>
+<li>
+<p><strong>Workaround (temporary):</strong> Use gateway config API instead of direct file edits:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="c1"># Set via API (persists better than file edits)</span>
+<a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>python3<span class="w"> </span><span class="s">&lt;&lt; &#39;PYEOF&#39;</span>
+<a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a><span class="s">import json</span>
+<a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="s">from pathlib import Path</span>
+<a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="s">cfg = json.load(open(Path.home() / &#39;.openclaw/openclaw.json&#39;))</span>
+<a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a><span class="s">cfg[&#39;agents&#39;][&#39;defaults&#39;][&#39;model&#39;][&#39;primary&#39;] = &#39;tokenpak-anthropic/claude-sonnet-4-6&#39;</span>
+<a id="__codelineno-25-7" name="__codelineno-25-7" href="#__codelineno-25-7"></a><span class="s">cfg[&#39;agents&#39;][&#39;defaults&#39;][&#39;model&#39;][&#39;fallbacks&#39;] = [</span>
+<a id="__codelineno-25-8" name="__codelineno-25-8" href="#__codelineno-25-8"></a><span class="s">    &#39;tokenpak-anthropic/claude-haiku-4-5&#39;,</span>
+<a id="__codelineno-25-9" name="__codelineno-25-9" href="#__codelineno-25-9"></a><span class="s">    &#39;anthropic/claude-haiku-4-5&#39;</span>
+<a id="__codelineno-25-10" name="__codelineno-25-10" href="#__codelineno-25-10"></a><span class="s">]</span>
+<a id="__codelineno-25-11" name="__codelineno-25-11" href="#__codelineno-25-11"></a><span class="s">json.dump(cfg, open(Path.home() / &#39;.openclaw/openclaw.json&#39;, &#39;w&#39;), indent=2)</span>
+<a id="__codelineno-25-12" name="__codelineno-25-12" href="#__codelineno-25-12"></a><span class="s">PYEOF</span>
+<a id="__codelineno-25-13" name="__codelineno-25-13" href="#__codelineno-25-13"></a>systemctl<span class="w"> </span>--user<span class="w"> </span>restart<span class="w"> </span>openclaw-gateway.service
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Verify fix:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="c1"># Primary should persist after restart</span>
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import json; cfg=json.load(open(&#39;</span><span class="nv">$HOME</span><span class="s2">/.openclaw/openclaw.json&#39;)); print(&#39;✅ PERSISTS&#39; if &#39;tokenpak&#39; in cfg[&#39;agents&#39;][&#39;defaults&#39;][&#39;model&#39;][&#39;primary&#39;] else &#39;❌ REVERTED&#39;)&quot;</span>
+</code></pre></div></p>
+</li>
+</ol>
+<hr />
+<h3 id="72-missing-tokenpak-source-files-bytecode-only">7.2 Missing TokenPak source files (bytecode only)<a class="headerlink" href="#72-missing-tokenpak-source-files-bytecode-only" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- ImportError: cannot import name 'server' from 'tokenpak.agent.proxy'
+- Only .pyc files exist in <code>~/vault/Projects/ocp-protocol/packages/pypi/tokenpak/</code>
+- Tests pass from cache but fresh imports fail</p>
+<p><strong>Root cause</strong>
+Distribution package created from compiled Python bytecode without committing source files to git. When Python tries fresh import (not from cache), it fails because .pyc references missing source.</p>
+<p><strong>Diagnostics</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="c1"># Check file count mismatch</span>
+<a id="__codelineno-27-2" name="__codelineno-27-2" href="#__codelineno-27-2"></a>find<span class="w"> </span>~/vault/Projects/ocp-protocol/packages/pypi/tokenpak<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.py&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+<a id="__codelineno-27-3" name="__codelineno-27-3" href="#__codelineno-27-3"></a>find<span class="w"> </span>~/vault/Projects/ocp-protocol/packages/pypi/tokenpak<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.pyc&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+<a id="__codelineno-27-4" name="__codelineno-27-4" href="#__codelineno-27-4"></a>
+<a id="__codelineno-27-5" name="__codelineno-27-5" href="#__codelineno-27-5"></a><span class="c1"># Try import (may work if cached)</span>
+<a id="__codelineno-27-6" name="__codelineno-27-6" href="#__codelineno-27-6"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;from tokenpak.telemetry.adapters import anthropic&quot;</span>
+<a id="__codelineno-27-7" name="__codelineno-27-7" href="#__codelineno-27-7"></a>
+<a id="__codelineno-27-8" name="__codelineno-27-8" href="#__codelineno-27-8"></a><span class="c1"># Fresh import (will fail if source missing)</span>
+<a id="__codelineno-27-9" name="__codelineno-27-9" href="#__codelineno-27-9"></a>python3<span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
+<a id="__codelineno-27-10" name="__codelineno-27-10" href="#__codelineno-27-10"></a><span class="s">import sys</span>
+<a id="__codelineno-27-11" name="__codelineno-27-11" href="#__codelineno-27-11"></a><span class="s">sys.modules.pop(&#39;tokenpak&#39;, None)</span>
+<a id="__codelineno-27-12" name="__codelineno-27-12" href="#__codelineno-27-12"></a><span class="s">from tokenpak.telemetry.adapters import anthropic</span>
+<a id="__codelineno-27-13" name="__codelineno-27-13" href="#__codelineno-27-13"></a><span class="s">EOF</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. <strong>Copy source from main repo (recommended):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="c1"># Backup broken package</span>
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>mv<span class="w"> </span>~/vault/Projects/ocp-protocol/packages/pypi/tokenpak<span class="w"> </span>~/vault/Projects/ocp-protocol/packages/pypi/tokenpak.broken
+<a id="__codelineno-28-3" name="__codelineno-28-3" href="#__codelineno-28-3"></a>
+<a id="__codelineno-28-4" name="__codelineno-28-4" href="#__codelineno-28-4"></a><span class="c1"># Copy complete source</span>
+<a id="__codelineno-28-5" name="__codelineno-28-5" href="#__codelineno-28-5"></a>cp<span class="w"> </span>-r<span class="w"> </span>~/tokenpak<span class="w"> </span>~/vault/Projects/ocp-protocol/packages/pypi/tokenpak
+<a id="__codelineno-28-6" name="__codelineno-28-6" href="#__codelineno-28-6"></a>
+<a id="__codelineno-28-7" name="__codelineno-28-7" href="#__codelineno-28-7"></a><span class="c1"># Verify import</span>
+<a id="__codelineno-28-8" name="__codelineno-28-8" href="#__codelineno-28-8"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;from tokenpak.agent.proxy import server; print(&#39;✅ Import works&#39;)&quot;</span>
+<a id="__codelineno-28-9" name="__codelineno-28-9" href="#__codelineno-28-9"></a>
+<a id="__codelineno-28-10" name="__codelineno-28-10" href="#__codelineno-28-10"></a><span class="c1"># Commit</span>
+<a id="__codelineno-28-11" name="__codelineno-28-11" href="#__codelineno-28-11"></a><span class="nb">cd</span><span class="w"> </span>~/vault<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>-A<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;trix: recover tokenpak source in ocp-protocol package&quot;</span>
+</code></pre></div></p>
+<ol>
+<li><strong>Decompile .pyc files (fallback):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a>pip<span class="w"> </span>install<span class="w"> </span>uncompyle6
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a>uncompyle6<span class="w"> </span>-r<span class="w"> </span>~/vault/Projects/ocp-protocol/packages/pypi/tokenpak/<span class="w"> </span>-o<span class="w"> </span>~/tokenpak-recovered/
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="c1"># Copy recovered source back to vault</span>
+</code></pre></div></li>
+</ol>
+<hr />
+<h3 id="73-agent-missing-module-updates">7.3 Agent missing module updates<a class="headerlink" href="#73-agent-missing-module-updates" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- One machine (Sue) has import errors while others work
+- New modules/stubs created on Trix don't exist on Sue
+- Tests fail with ImportError for recently-added code</p>
+<p><strong>Root cause</strong>
+Git pull/sync not updated on remote machines when new modules added to main repo.</p>
+<p><strong>Diagnostics</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="c1"># Compare available modules</span>
+<a id="__codelineno-30-2" name="__codelineno-30-2" href="#__codelineno-30-2"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tokenpak.agent.semantic.term_card_resolver; print(&#39;✅ Module found&#39;)&quot;</span><span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;❌ Module missing&quot;</span>
+<a id="__codelineno-30-3" name="__codelineno-30-3" href="#__codelineno-30-3"></a>
+<a id="__codelineno-30-4" name="__codelineno-30-4" href="#__codelineno-30-4"></a><span class="c1"># Check git status</span>
+<a id="__codelineno-30-5" name="__codelineno-30-5" href="#__codelineno-30-5"></a><span class="nb">cd</span><span class="w"> </span>~/tokenpak<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>status
+<a id="__codelineno-30-6" name="__codelineno-30-6" href="#__codelineno-30-6"></a><span class="nb">cd</span><span class="w"> </span>~/tokenpak<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>log<span class="w"> </span>--oneline<span class="w"> </span>-5<span class="w"> </span><span class="p">|</span><span class="w"> </span>head
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. <strong>Pull latest code:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="nb">cd</span><span class="w"> </span>~/tokenpak<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>master
+</code></pre></div></p>
+<ol>
+<li>
+<p><strong>Verify update:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;from tokenpak.agent.semantic.term_card_resolver import TermCardResolver; print(&#39;✅ Updated&#39;)&quot;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>If issues persist:</strong> Check for merge conflicts or stale branches:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="nb">cd</span><span class="w"> </span>~/tokenpak<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>fetch<span class="w"> </span>--all<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>status
+</code></pre></div></p>
+</li>
+</ol>
+<hr />
+<h3 id="74-case-sensitivity-collision-in-queue-directories">7.4 Case sensitivity collision in queue directories<a class="headerlink" href="#74-case-sensitivity-collision-in-queue-directories" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Tasks in <code>~/vault/Agents/trix/queue/</code> (lowercase) never execute
+- Same agent has <code>~/vault/Agents/Trix/queue/</code> (uppercase) with active tasks
+- Heartbeat script ignores lowercase directories</p>
+<p><strong>Root cause</strong>
+Old automation created lowercase queue dirs; heartbeat monitoring scripts expect uppercase (case-sensitive filesystem). Tasks stuck in orphaned lowercase dirs.</p>
+<p><strong>Diagnostics</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="c1"># Find orphaned lowercase dirs</span>
+<a id="__codelineno-34-2" name="__codelineno-34-2" href="#__codelineno-34-2"></a>find<span class="w"> </span>~/vault/Agents<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-name<span class="w"> </span>queue<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;trix|cali&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sort
+<a id="__codelineno-34-3" name="__codelineno-34-3" href="#__codelineno-34-3"></a>ls<span class="w"> </span>-la<span class="w"> </span>~/vault/Agents/<span class="o">{</span>Trix,trix,Cali,cali<span class="o">}</span>/queue<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. <strong>Identify orphaned tasks:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a>find<span class="w"> </span>~/vault/Agents/<span class="o">{</span>trix,cali<span class="o">}</span>/queue<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.md&quot;</span><span class="w"> </span><span class="m">2</span>&gt;/dev/null
+</code></pre></div></p>
+<ol>
+<li>
+<p><strong>Delete lowercase directories:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a>rm<span class="w"> </span>-rf<span class="w"> </span>~/vault/Agents/trix/queue<span class="w"> </span>~/vault/Agents/cali/queue
+<a id="__codelineno-36-2" name="__codelineno-36-2" href="#__codelineno-36-2"></a><span class="nb">cd</span><span class="w"> </span>~/vault<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>add<span class="w"> </span>-A<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;trix: cleanup — remove orphaned lowercase queue dirs&quot;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Verify only uppercase remain:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a>ls<span class="w"> </span>-ld<span class="w"> </span>~/vault/Agents/<span class="o">{</span>Trix,Cali<span class="o">}</span>/queue
+</code></pre></div></p>
+</li>
+</ol>
+<hr />
+<h3 id="75-stale-compiled-bytecode-in-pycache">7.5 Stale compiled bytecode in <strong>pycache</strong><a class="headerlink" href="#75-stale-compiled-bytecode-in-pycache" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Fresh module added but old .pyc still loads
+- Import errors reference functions that don't exist in source
+- <code>__pycache__</code> directories growing large</p>
+<p><strong>Root cause</strong>
+Python caches compiled .pyc files; if source changes but cache isn't invalidated, stale bytecode loads.</p>
+<p><strong>Diagnostics</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="c1"># Check __pycache__ size</span>
+<a id="__codelineno-38-2" name="__codelineno-38-2" href="#__codelineno-38-2"></a>find<span class="w"> </span>~/tokenpak<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-name<span class="w"> </span>__pycache__<span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l
+<a id="__codelineno-38-3" name="__codelineno-38-3" href="#__codelineno-38-3"></a>du<span class="w"> </span>-sh<span class="w"> </span>~/tokenpak/.
+<a id="__codelineno-38-4" name="__codelineno-38-4" href="#__codelineno-38-4"></a>
+<a id="__codelineno-38-5" name="__codelineno-38-5" href="#__codelineno-38-5"></a><span class="c1"># Check if .pyc is newer than .py</span>
+<a id="__codelineno-38-6" name="__codelineno-38-6" href="#__codelineno-38-6"></a>stat<span class="w"> </span>~/tokenpak/tokenpak/core.py<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Modify
+<a id="__codelineno-38-7" name="__codelineno-38-7" href="#__codelineno-38-7"></a>stat<span class="w"> </span>~/tokenpak/tokenpak/__pycache__/core*.pyc<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>Modify
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. <strong>Clear Python cache:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a>find<span class="w"> </span>~/tokenpak<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-name<span class="w"> </span>__pycache__<span class="w"> </span>-exec<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span><span class="o">{}</span><span class="w"> </span>+
+<a id="__codelineno-39-2" name="__codelineno-39-2" href="#__codelineno-39-2"></a>find<span class="w"> </span>~/tokenpak<span class="w"> </span>-name<span class="w"> </span><span class="s2">&quot;*.pyc&quot;</span><span class="w"> </span>-delete
+</code></pre></div></p>
+<ol>
+<li>
+<p><strong>Force recompile on next import:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tokenpak; print(&#39;✅ Recompiled&#39;)&quot;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Verify no stale references:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import tokenpak.agent.proxy.server; print(server.__file__)&quot;</span>
+</code></pre></div></p>
+</li>
+</ol>
+<hr />
+<h3 id="76-duplicate-model-aliases-causing-routing-conflicts">7.6 Duplicate model aliases causing routing conflicts<a class="headerlink" href="#76-duplicate-model-aliases-causing-routing-conflicts" title="Permanent link">&para;</a></h3>
+<p><strong>Symptoms</strong>
+- Multiple aliases point to same model
+- Unclear which route takes precedence
+- Model selection unpredictable under fallback conditions</p>
+<p><strong>Root cause</strong>
+Manual config edits and deduplication logic left duplicate aliases across machines (e.g., <code>opus</code> as alias on both tokenpak and direct anthropic).</p>
+<p><strong>Diagnostics</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="c1"># Find duplicate aliases</span>
+<a id="__codelineno-42-2" name="__codelineno-42-2" href="#__codelineno-42-2"></a>python3<span class="w"> </span><span class="s">&lt;&lt; &#39;EOF&#39;</span>
+<a id="__codelineno-42-3" name="__codelineno-42-3" href="#__codelineno-42-3"></a><span class="s">import json</span>
+<a id="__codelineno-42-4" name="__codelineno-42-4" href="#__codelineno-42-4"></a><span class="s">from pathlib import Path</span>
+<a id="__codelineno-42-5" name="__codelineno-42-5" href="#__codelineno-42-5"></a><span class="s">cfg = json.load(open(Path.home() / &#39;.openclaw/openclaw.json&#39;))</span>
+<a id="__codelineno-42-6" name="__codelineno-42-6" href="#__codelineno-42-6"></a><span class="s">models = cfg[&#39;agents&#39;][&#39;defaults&#39;][&#39;models&#39;]</span>
+<a id="__codelineno-42-7" name="__codelineno-42-7" href="#__codelineno-42-7"></a><span class="s">aliases = {}</span>
+<a id="__codelineno-42-8" name="__codelineno-42-8" href="#__codelineno-42-8"></a><span class="s">for model, spec in models.items():</span>
+<a id="__codelineno-42-9" name="__codelineno-42-9" href="#__codelineno-42-9"></a><span class="s">    alias = spec.get(&#39;alias&#39;)</span>
+<a id="__codelineno-42-10" name="__codelineno-42-10" href="#__codelineno-42-10"></a><span class="s">    if alias:</span>
+<a id="__codelineno-42-11" name="__codelineno-42-11" href="#__codelineno-42-11"></a><span class="s">        if alias in aliases:</span>
+<a id="__codelineno-42-12" name="__codelineno-42-12" href="#__codelineno-42-12"></a><span class="s">            print(f&quot;❌ Duplicate: {alias} → {aliases[alias]} AND {model}&quot;)</span>
+<a id="__codelineno-42-13" name="__codelineno-42-13" href="#__codelineno-42-13"></a><span class="s">        else:</span>
+<a id="__codelineno-42-14" name="__codelineno-42-14" href="#__codelineno-42-14"></a><span class="s">            aliases[alias] = model</span>
+<a id="__codelineno-42-15" name="__codelineno-42-15" href="#__codelineno-42-15"></a><span class="s">EOF</span>
+</code></pre></div></p>
+<p><strong>Fixes</strong>
+1. <strong>Consolidate to TokenPak versions (recommended):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="c1"># Remove aliases from direct providers; keep only on tokenpak-* versions</span>
+<a id="__codelineno-43-2" name="__codelineno-43-2" href="#__codelineno-43-2"></a><span class="c1"># Example:</span>
+<a id="__codelineno-43-3" name="__codelineno-43-3" href="#__codelineno-43-3"></a><span class="c1"># Remove: &quot;anthropic/claude-opus-4-6&quot;: {&quot;alias&quot;: &quot;opus&quot;}</span>
+<a id="__codelineno-43-4" name="__codelineno-43-4" href="#__codelineno-43-4"></a><span class="c1"># Keep:   &quot;tokenpak-anthropic/claude-opus-4-6&quot;: {&quot;alias&quot;: &quot;opus&quot;}</span>
+</code></pre></div></p>
+<ol>
+<li><strong>Verify no duplicates remain:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;</span>
+<a id="__codelineno-44-2" name="__codelineno-44-2" href="#__codelineno-44-2"></a><span class="s2">import json</span>
+<a id="__codelineno-44-3" name="__codelineno-44-3" href="#__codelineno-44-3"></a><span class="s2">from pathlib import Path</span>
+<a id="__codelineno-44-4" name="__codelineno-44-4" href="#__codelineno-44-4"></a><span class="s2">cfg = json.load(open(Path.home() / &#39;.openclaw/openclaw.json&#39;))</span>
+<a id="__codelineno-44-5" name="__codelineno-44-5" href="#__codelineno-44-5"></a><span class="s2">models = cfg[&#39;agents&#39;][&#39;defaults&#39;][&#39;models&#39;]</span>
+<a id="__codelineno-44-6" name="__codelineno-44-6" href="#__codelineno-44-6"></a><span class="s2">aliases = {}</span>
+<a id="__codelineno-44-7" name="__codelineno-44-7" href="#__codelineno-44-7"></a><span class="s2">for m, s in models.items():</span>
+<a id="__codelineno-44-8" name="__codelineno-44-8" href="#__codelineno-44-8"></a><span class="s2">    a = s.get(&#39;alias&#39;)</span>
+<a id="__codelineno-44-9" name="__codelineno-44-9" href="#__codelineno-44-9"></a><span class="s2">    if a and a in aliases:</span>
+<a id="__codelineno-44-10" name="__codelineno-44-10" href="#__codelineno-44-10"></a><span class="s2">        print(f&#39;❌ {a}: {aliases[a]} + {m}&#39;)</span>
+<a id="__codelineno-44-11" name="__codelineno-44-11" href="#__codelineno-44-11"></a><span class="s2">    elif a:</span>
+<a id="__codelineno-44-12" name="__codelineno-44-12" href="#__codelineno-44-12"></a><span class="s2">        aliases[a] = m</span>
+<a id="__codelineno-44-13" name="__codelineno-44-13" href="#__codelineno-44-13"></a><span class="s2">print(f&#39;✅ {len(aliases)} unique aliases&#39;)</span>
+<a id="__codelineno-44-14" name="__codelineno-44-14" href="#__codelineno-44-14"></a><span class="s2">&quot;</span>
+</code></pre></div></li>
+</ol>
+<hr />
+<h2 id="8-standard-health-commands">8) Standard Health Commands<a class="headerlink" href="#8-standard-health-commands" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-45-1" name="__codelineno-45-1" href="#__codelineno-45-1"></a><span class="c1"># Health</span>
+<a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a>curl<span class="w"> </span>-fsS<span class="w"> </span>http://127.0.0.1:8787/health
+<a id="__codelineno-45-3" name="__codelineno-45-3" href="#__codelineno-45-3"></a>
+<a id="__codelineno-45-4" name="__codelineno-45-4" href="#__codelineno-45-4"></a><span class="c1"># Metrics (if enabled)</span>
+<a id="__codelineno-45-5" name="__codelineno-45-5" href="#__codelineno-45-5"></a>curl<span class="w"> </span>-fsS<span class="w"> </span>http://127.0.0.1:8787/metrics<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n<span class="w"> </span><span class="m">50</span>
+<a id="__codelineno-45-6" name="__codelineno-45-6" href="#__codelineno-45-6"></a>
+<a id="__codelineno-45-7" name="__codelineno-45-7" href="#__codelineno-45-7"></a><span class="c1"># Container logs</span>
+<a id="__codelineno-45-8" name="__codelineno-45-8" href="#__codelineno-45-8"></a>docker<span class="w"> </span>logs<span class="w"> </span>--tail<span class="w"> </span><span class="m">200</span><span class="w"> </span>&lt;container_name&gt;
+<a id="__codelineno-45-9" name="__codelineno-45-9" href="#__codelineno-45-9"></a>
+<a id="__codelineno-45-10" name="__codelineno-45-10" href="#__codelineno-45-10"></a><span class="c1"># Process + sockets</span>
+<a id="__codelineno-45-11" name="__codelineno-45-11" href="#__codelineno-45-11"></a>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-E<span class="w"> </span><span class="s1">&#39;proxy.py|tokenpak&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>-v<span class="w"> </span>grep
+<a id="__codelineno-45-12" name="__codelineno-45-12" href="#__codelineno-45-12"></a>ss<span class="w"> </span>-ltnp<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="m">8787</span>
+</code></pre></div>
+<p>Keep this guide alongside deployment docs and update it after each production incident.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/tokenpak/tokenpak" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://pypi.org/project/tokenpak/" target="_blank" rel="noopener" title="pypi.org" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.copy", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
